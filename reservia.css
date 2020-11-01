@@ -1,24 +1,24 @@
 body{
     font-family: 'Raleway', sans-serif;
 }
-.title{
-    color: #0065fc;
-    display: flex;
-    flex-flow: row wrap;
-}
-.menu{
-    height: 60px;
+.header{
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-flow: row wrap;
     align-content: center;
 }
-.header{
-    height: 60px
+.title{
+    color: #0065fc;
+}
+.header:nth-child(text){
+    order: 2;
+}
+.menu{
+    height: 20px;
     display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
     flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-between;
-    align-content: flex-start;
 }
