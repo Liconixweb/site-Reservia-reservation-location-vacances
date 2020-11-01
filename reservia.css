@@ -1,5 +1,24 @@
-h1
-{
-    color: #0065fc;
+body{
     font-family: 'Raleway', sans-serif;
+}
+.title{
+    color: #0065fc;
+    display: flex;
+    flex-flow: row wrap;
+}
+.menu{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-content: center;
+}
+.header{
+    height: 60px
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    align-content: flex-start;
 }
