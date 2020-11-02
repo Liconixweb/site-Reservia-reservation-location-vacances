@@ -1,24 +1,53 @@
+/*Mise en forme globale*/
 body{
     font-family: 'Raleway', sans-serif;
 }
-.header{
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-flow: row wrap;
-    align-content: center;
+h2{
+    font-weight: bold;
 }
-.title{
-    color: #0065fc;
-}
-.header:nth-child(text){
-    order: 2;
-}
+/*Mise en forme menu*/
 .menu{
     height: 20px;
+    color: #0065fc;
     display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    
 }
+.menu a{
+    margin-left: 10%;
+}
+/*Mise en forme title*/
+.title{
+    height: 50px;
+    color: #0065fc;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+/*Mise en forme texte du header*/
+.text header{
+    height: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+/*Mise en forme du formulaire*/
+#button_rechercher{
+    margin: 0 auto;
+    background-color: #0065fc;
+    border: 10px;
+    border-radius: 100px;
+    text-decoration: none;
+    width: 136px;
+    height: 50px;
+    text-align: center;
+    text-decoration-color: white;
+    font-size: ;
+}
+#button_rechercher:active{
+    background-color: #0051ca;
+}
+/*Mise en forme des filtres*/
