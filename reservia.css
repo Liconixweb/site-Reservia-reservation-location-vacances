@@ -26,12 +26,12 @@ h3{
     flex-flow: column wrap;
 }
 /*Mise en forme logo*/
-#logo img{
+.logo img{
     width: 100px;
     height: 40px;
 }
 /*Mise en forme texte du header*/
-#text header{
+.text header{
     height: 80px;
     display: flex;
     flex-flow: column wrap;
@@ -72,7 +72,7 @@ map{
     border-radius: 0 10px 10px 0;
     line-height: 50px; 
 }
-#rechercher:active{
+.rechercher:active{
     background-color: blue;
 }
 /*Mise en forme des filtres*/
