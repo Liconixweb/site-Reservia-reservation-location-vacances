@@ -4,37 +4,40 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" href="reservia.css"/>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,600&display=swap" rel="stylesheet">
-        <link href="exemple Font Awesome/css/fontawesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="font-awesome/css/all.css">
         <title>Reservia</title>
     </head>
     <body>
         <header>
-            
             <div class="menu">
-                <a href="#hebergement">Hébergements</a>
-                <a href="#activite">Activités</a>
-                <a href="#inscription">S'inscrire</a>
+                <a style="text-decoration:none"href="#hebergement">Hébergements</a>
+                <a style="text-decoration:none"href="#activite">Activités</a>
+                <a style="text-decoration:none"href="#inscription">S'inscrire</a>
             </div>
             <div class="header">
                 <div class="logo">
                     <img src="Reservia@3x.png" alt="logo"/>
                 </div>
-                <div id="text header">
-                    <h3>Trouvez votre hébergement pour des vacances de rêve</h2> 
+                <div class="text header">
+                    <h3>Trouvez votre hébergement pour des vacances de rêve</h3> 
                     <p>En plein centre ville ou en pleine nature</p>  
                 </div>
                 <div class="formulaire">
+                    <i class="fas fa-map-marker-alt" fa></i>                 
                     <form method="post" action ="traitement.php">
-                        <input type="submit" id="map" value=""/>
-                        <input type="text" name="ville" id="ville" maxlength="100" placeholder="Marseilles, France" autofocus/>
+                        <input type="text" name="ville" id="ville" maxlength="100" placeholder="Marseille, France" autofocus/>
                         <input type="submit" value="Rechercher" id="rechercher"/>                          
                     </form>                
                 </div>
                 <div class="filtres">
                     <h4>Filtres</h4>
+                    <i class="fas fa-money-bill-wave-alt"></i>
                     <button class="economique">Économique</button>
+                    <i class="fas fa-child"></i>
                     <button class="familial">Familial</button>
+                    <i class="fas fa-heart"></i>
                     <button class="romantique">Romantique</button>
+                    <i class="fas fa-dog"></i>
                     <button class="animaux">Animaux autorisés</button>
                     <h5>Plus de 500 logements sont disponibles dans cette ville</h5>
                 </div>  
@@ -43,28 +46,28 @@
         <section>
             <!--Article 1 Hébergements à ville-->
             <div class="article-1">
-                <h3 id="hebergement">Hébergement à Marseille</h2>
+                <h3 id="hebergement">Hébergement à Marseille</h3>
             </div>
             <!--Article 2 Les plus populaires-->
             <div class="article-2">
-                <h3>Les plus populaires</h2>
+                <h3>Les plus populaires</h3>
             </div>
             <!--Article 3 Activités à ville-->
             <div class="article-3">
-                <h3 id="activite">Activités à Marseille</h2>
+                <h3 id="activite">Activités à Marseille</h3>
             </div>
             <!--Article 4 A propos-->
             <div class="article-4">
-                <h4>A propos</h3>
-                <h5>Fonctionnement du site</h4>
-                <h5>Conditions générales de vente</h4>
-                <h5>Données et confidentialité</h4>
-                <h4>Nos hébergements</h3>
-                <h5>Charte qualité</h4>
-                <h5>Soumettre votre hôtel</h4>
-                <h4>Assistance</h3>
-                <h5>Centre d'aide</h4>
-                <h5>Nous contacter</h4>
+                <h4>A propos</h4>
+                <h5>Fonctionnement du site</h5>
+                <h5>Conditions générales de vente</h5>
+                <h5>Données et confidentialité</h5>
+                <h4>Nos hébergements</h4>
+                <h5>Charte qualité</h5>
+                <h5>Soumettre votre hôtel</h5>
+                <h4>Assistance</h4>
+                <h5>Centre d'aide</h5>
+                <h5>Nous contacter</h5>
             </div>      
         </section>
     </body>

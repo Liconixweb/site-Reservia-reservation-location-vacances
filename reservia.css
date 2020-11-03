@@ -45,16 +45,8 @@ h3{
     flex-flow: row wrap;
     align-items:flex-end;
 }
-map{
-    height: 50px;
-    width: 50px;
-}
-#map{
-    background-image: url(icones/map-marker-alt-solid.svg);
-    height: 50px;
-    width: 50px;
-    background-color: #f2f2f2;
-}
+
+
 #ville{
     text-align: start;
     font-weight: 500;
