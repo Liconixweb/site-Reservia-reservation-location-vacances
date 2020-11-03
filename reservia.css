@@ -5,15 +5,9 @@ body{
 h2{
     font-weight: bold;
 }
-/*Mise en forme header*/
-.hearder{
-    display: flex;
-    flex-flow: row wrap;
-}
 /*Mise en forme menu*/
 .menu{
-    height: 70px;
-      
+    height: 70px;      
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
@@ -24,17 +18,18 @@ h2{
     margin-left: 30px;
     line-height: 20px;
     color: #0065fc;
-
 }
-
-/*Mise en forme title*/
-#logo{
-    width: auto;
-    height: auto;
+/*Mise en forme header général*/
+.hearder{
+    height: 300px;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
+    flex-flow: column wrap;
+}
+/*Mise en forme logo*/
+#logo img{
+    width: 100px;
+    height: 40px;
+    
 }
 /*Mise en forme texte du header*/
 #text header{
@@ -74,3 +69,28 @@ h2{
     background-color: blue;
 }
 /*Mise en forme des filtres*/
+.filtres{
+    display: flex;
+    flex-flow: row wrap;
+}
+/*Mise en forme Article 1*/
+.article-1{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/*Mise en forme Article 2*/
+.article-2{
+    display: flex;
+    flex-flow: row wrap;
+}
+/*Mise en forme Article 3*/
+.article-3{
+    display: flex;
+    flex-flow: row wrap;
+}
+/*Mise en forme Article 4*/
+.article-4{
+    display: flex;
+    flex-flow: row wrap;
+}
