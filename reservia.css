@@ -2,8 +2,8 @@
 body{
     font-family: 'Raleway', sans-serif;
 }
-h2{
-    font-weight: bold;
+h3{
+    font-weight: bolder;
 }
 /*Mise en forme menu*/
 .menu{
@@ -29,23 +29,31 @@ h2{
 #logo img{
     width: 100px;
     height: 40px;
-    
 }
 /*Mise en forme texte du header*/
 #text header{
-    height: 20px;
+    height: 80px;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
     align-items: flex-start;
 }
 /*Mise en forme du formulaire*/
-#formulaire{
+.formulaire{
     height: 50px;
     display: flex;
     flex-flow: row wrap;
-    place-content: flex-start stretch;
-    align-items: center;
+    align-items:flex-end;
+}
+map{
+    height: 50px;
+    width: 50px;
+}
+#map{
+    background-image: url(icones/map-marker-alt-solid.svg);
+    height: 50px;
+    width: 50px;
+    background-color: #f2f2f2;
 }
 #ville{
     text-align: start;
@@ -62,16 +70,21 @@ h2{
     color: white;
     background-color: #0065fc;
     border-radius: 0 10px 10px 0;
-    line-height: 50px;
-    
+    line-height: 50px; 
 }
 #rechercher:active{
     background-color: blue;
 }
 /*Mise en forme des filtres*/
 .filtres{
+    height: 130px;
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-end
+}
+.filtres button{
+    height: 50px;
 }
 /*Mise en forme Article 1*/
 .article-1{
