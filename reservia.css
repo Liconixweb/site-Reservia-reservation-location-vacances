@@ -4,6 +4,11 @@ body{
 }
 h3{
     font-weight: bold;
+    margin-top: 60px;
+}
+p{
+    margin-top: -10px;
+    font-size: small;
 }
 /*Mise en forme menu*/
 .menu{
@@ -32,13 +37,13 @@ a:active{
     color:#DEEBFF;
     border-top: medium solid #0065fc;
 }
-
 /*Mise en forme header général*/
-.hearder{
-    height: 300px;
+.header{
+    height: 140px;
     display: flex;
-    flex-flow: column wrap;
-
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+     
 }
 /*Mise en forme logo*/
 .logo img{
@@ -47,11 +52,8 @@ a:active{
 }
 /*Mise en forme texte du header*/
 .text header{
-    height: 80px;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
-    align-items: flex-start;
+    
+    
 }
 /*Mise en forme du formulaire*/
 .formulaire{
