@@ -6,6 +6,9 @@ h3{
     font-weight: bold;
     margin-top: 60px;
 }
+h4{
+    font-weight: 900;
+}
 p{
     margin-top: -10px;
     font-size: small;
@@ -43,7 +46,7 @@ a:active{
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
-     
+    margin-top: -40px;   
 }
 /*Mise en forme logo*/
 .logo img{
@@ -51,10 +54,7 @@ a:active{
     height: 40px;
 }
 /*Mise en forme texte du header*/
-.text header{
-    
-    
-}
+
 /*Mise en forme du formulaire*/
 .formulaire{
     height: 55px;
@@ -83,7 +83,6 @@ a:active{
     border-style: solid;
     border-color: #f2f2f2;
     margin-left: -1px;
-    outlines
 }
 #rechercher{
     text-align: center;
@@ -96,22 +95,46 @@ a:active{
     line-height: 50px; 
     margin-left: -5px;
     border-color: transparent;
-    
-}
-.rechercher:active{
-    background-color: blue;
 }
 /*Mise en forme des filtres*/
 .filtres{
-    height: 130px;
+    height: 50px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: flex-end
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 50px;
+}
+.filtres i{
+    text-decoration: none;
+    text-align: center;
+    width: 50px;
+    line-height: 50px;
+    border: 1px solid #f2f2f2;
+    border-radius: 100% 100% 100% 100%;
+    background-color: #deebff;
+    color: #0065fc;
+    margin-right: -30px;
+    position: relative;z-index: 10;
 }
 .filtres button{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
     height: 50px;
+    width: auto;
+    border: 2px solid #f2f2f2;
+    border-left-color: transparent;
+    border-radius: 0 40px 40px 0;
+    background-color: transparent;
+    padding: 0px 20px 0px 50px;
+    margin-right: 50px;
 }
+.filtres h4{
+    margin-right: 50px;
+}
+/*Mise en forme Info*/
+#
+
 /*Mise en forme Article 1*/
 .article-1{
     display: flex;
@@ -122,6 +145,11 @@ a:active{
 .article-2{
     display: flex;
     flex-flow: row wrap;
+}
+#populaire{
+    text-decoration: none;
+    background-color:#f2f2f2;
+    border: 0;
 }
 /*Mise en forme Article 3*/
 .article-3{
