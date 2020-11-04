@@ -38,6 +38,7 @@ a:active{
     height: 300px;
     display: flex;
     flex-flow: column wrap;
+
 }
 /*Mise en forme logo*/
 .logo img{
@@ -54,18 +55,33 @@ a:active{
 }
 /*Mise en forme du formulaire*/
 .formulaire{
-    height: 50px;
+    height: 55px;
     display: flex;
     flex-flow: row wrap;
+    align-content: flex-start;
     align-items:flex-end;
-    margin: 0px;
+}
+#map{
+    text-decoration: none;
+    text-align: center;
+    width: 52px;
+    line-height: 52px;
+    align-self: center;
+    border: 1px solid #f2f2f2;
+    border-radius: 10px 0 0 10px;
+    margin-bottom: 1px;
+    background-color: #f2f2f2;
 }
 #ville{
     text-align: start;
-    font-weight: 500;
+    font-weight: bold;
     width: 240px;
     opacity: 0.5;
     line-height: 50px;
+    border-style: solid;
+    border-color: #f2f2f2;
+    margin-left: -1px;
+    outlines
 }
 #rechercher{
     text-align: center;
@@ -76,6 +92,9 @@ a:active{
     background-color: #0065fc;
     border-radius: 0 10px 10px 0;
     line-height: 50px; 
+    margin-left: -5px;
+    border-color: transparent;
+    
 }
 .rechercher:active{
     background-color: blue;
