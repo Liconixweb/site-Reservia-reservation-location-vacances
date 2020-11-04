@@ -7,7 +7,7 @@ h3{
     margin-top: 60px;
 }
 h4{
-    font-weight: 900;
+    font-weight: bold;
 }
 p{
     margin-top: -10px;
@@ -26,6 +26,9 @@ p{
     margin-left: 30px;
     line-height: 60px;
     color: #0065fc;
+}
+#font-inscription{
+    font-weight: bold;
 }
 a:link{
     color: #0065fc;
@@ -95,6 +98,7 @@ a:active{
     line-height: 50px; 
     margin-left: -5px;
     border-color: transparent;
+    font-weight: bold;
 }
 /*Mise en forme des filtres*/
 .filtres{
