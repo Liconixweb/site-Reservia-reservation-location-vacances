@@ -1,6 +1,8 @@
 /*Mise en forme globale*/
 body{
     font-family: 'Raleway', sans-serif;
+    margin: 0 50px 50px 50px;
+    padding: 0;
 }
 h3{
     font-weight: bold;
@@ -20,11 +22,10 @@ p{
     flex-flow: row wrap;
     justify-content: flex-end;
     align-items: flex-start;
-    align-items: flex-end;
 }
 .menu a{
     margin-left: 30px;
-    line-height: 60px;
+    line-height: 80px;
     color: #0065fc;
 }
 #font-inscription{
@@ -137,7 +138,7 @@ a:active{
     margin-right: 50px;
 }
 /*Mise en forme Info*/
-#
+
 
 /*Mise en forme Article 1*/
 .article-1{
