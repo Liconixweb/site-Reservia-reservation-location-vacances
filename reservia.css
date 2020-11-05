@@ -17,15 +17,15 @@ p{
 }
 /*Mise en forme menu*/
 .menu{
-    height: 70px;      
+    height: 90px;      
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
-    align-items: flex-start;
+    align-items: center;
 }
 .menu a{
     margin-left: 30px;
-    line-height: 80px;
+    line-height: 90px;
     color: #0065fc;
 }
 #font-inscription{
@@ -87,6 +87,7 @@ a:active{
     border-style: solid;
     border-color: #f2f2f2;
     margin-left: -1px;
+    font-size: 15px;
 }
 #rechercher{
     text-align: center;
@@ -100,6 +101,7 @@ a:active{
     margin-left: -5px;
     border-color: transparent;
     font-weight: bold;
+    font-size: 17px;
 }
 /*Mise en forme des filtres*/
 .filtres{
@@ -122,6 +124,9 @@ a:active{
     margin-right: -30px;
     position: relative;z-index: 10;
 }
+.text-filtres{
+    font-size: 15px;
+}
 .filtres button{
     font-family: 'Raleway', sans-serif;
     font-weight: 900;
@@ -134,12 +139,37 @@ a:active{
     padding: 0px 20px 0px 50px;
     margin-right: 50px;
 }
+a:link{
+    color: #0065fc;
+}
+a:visited{
+    color: black;
+}
+a:hover{
+    border-top: medium solid #0065fc;
+}
+a:active{
+    color:#DEEBFF;
+    border-top: medium solid #0065fc;
+}
 .filtres h4{
     margin-right: 50px;
 }
 /*Mise en forme Info*/
-
-
+.info{
+    height: 100px;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+}
+.info i{
+    color: #0065fc; 
+}
+.info h5{
+    margin-left: 10px;
+}
 /*Mise en forme Article 1*/
 .article-1{
     display: flex;
