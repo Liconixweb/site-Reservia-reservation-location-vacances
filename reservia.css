@@ -139,18 +139,11 @@ a:active{
     padding: 0px 20px 0px 50px;
     margin-right: 50px;
 }
-a:link{
+/*Effet des boutons des filtres*/
+button:hover{
+    border: 5px groove #0065fc;
     color: #0065fc;
-}
-a:visited{
-    color: black;
-}
-a:hover{
-    border-top: medium solid #0065fc;
-}
-a:active{
-    color:#DEEBFF;
-    border-top: medium solid #0065fc;
+    font-weight: bold;
 }
 .filtres h4{
     margin-right: 50px;
