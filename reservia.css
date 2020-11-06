@@ -163,16 +163,38 @@ button:hover{
 .info h5{
     margin-left: 10px;
 }
+/*Mise en forme générale Article*/
+.color-blue{
+    color: #0065fc;
+}
+.color-grey{
+    color: #f2f2f2;
+}
+.background-bloc{
+    background-color: #f2f2f2;
+}
 /*Mise en forme Article 1*/
 .article-1{
     display: flex;
     flex-flow: row wrap;
+    height: 630px;
+    width: 870px;
+    background-color: #f2f2f2;
+    align-content: flex-start;
+    align-items:flex-end;
+    margin-block-end: 700px;
 }
 
 /*Mise en forme Article 2*/
 .article-2{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
+    height: 620px;
+    width: 410px;
+    background-color: #f2f2f2;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
 }
 #populaire{
     text-decoration: none;
@@ -188,4 +210,5 @@ button:hover{
 .article-4{
     display: flex;
     flex-flow: row wrap;
+    height: 500px;
 }
