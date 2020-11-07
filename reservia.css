@@ -173,42 +173,68 @@ button:hover{
 .background-bloc{
     background-color: #f2f2f2;
 }
-/*Mise en forme Article 1*/
-.article-1{
+.section{
     display: flex;
     flex-flow: row wrap;
-    height: 630px;
-    width: 870px;
+    align-content: space-around;
+    align-items: flex-start;  
+    justify-content: flex-start;
+}
+.section:nth-of-type(1){
+    order: 0;
+    flex: 1;
+}
+.section:nth-of-type(2){
+    order: 0;
+    flex: 1;
+}
+.section:nth-of-type(3){
+    order: 0;
+    flex:1 100%;
+}
+.section:nth-of-type(4){
+    order: 0;
+    flex: 1 100%;
+}
+/*Mise en forme Article 1*/
+.article-1{
     background-color: #f2f2f2;
-    align-content: flex-start;
-    align-items:flex-end;
-    margin-block-end: 700px;
+    border-radius: 10px 10px 10px 10px;
+    height: 625px;
+    width: 880px;
+}
+.article-1 img{
+    border-radius: 10px 10px 0 0;
+    border: 5px solid white;
+    background-color: white;
+    align-items: flex-start;
+}
+.article-1 figcaption{
+    border-radius: 0 0 10px 10px;
+    border: 5px solid white;
+    background-color: white;
+    margin-top: -10px;
+    padding-left: 10px;
+    height: 50px;
+    width: 230px;
 }
 
 /*Mise en forme Article 2*/
 .article-2{
-    display: flex;
-    flex-flow: column wrap;
-    height: 620px;
-    width: 410px;
     background-color: #f2f2f2;
-    justify-content: flex-end;
-    align-content: center;
-    align-items: center;
+    height: 625px;
+    width: 420px;
 }
 #populaire{
     text-decoration: none;
     background-color:#f2f2f2;
-    border: 0;
+    
 }
 /*Mise en forme Article 3*/
 .article-3{
-    display: flex;
-    flex-flow: row wrap;
+    
 }
 /*Mise en forme Article 4*/
 .article-4{
-    display: flex;
-    flex-flow: row wrap;
-    height: 500px;
+
 }
