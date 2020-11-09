@@ -170,71 +170,91 @@ button:hover{
 .color-grey{
     color: #f2f2f2;
 }
-.background-bloc{
-    background-color: #f2f2f2;
-}
-.section{
+.section-1{
     display: flex;
-    flex-flow: row wrap;
-    align-content: space-around;
-    align-items: flex-start;  
-    justify-content: flex-start;
+    height: 625px;
+    width: auto;
 }
-.section:nth-of-type(1){
-    order: 0;
-    flex: 1;
-}
-.section:nth-of-type(2){
-    order: 0;
-    flex: 1;
-}
-.section:nth-of-type(3){
-    order: 0;
-    flex:1 100%;
-}
-.section:nth-of-type(4){
-    order: 0;
-    flex: 1 100%;
-}
+.section-2{
+    display: flex;
+    height: 625px;
+    width: auto;
+} 
 /*Mise en forme Article 1*/
 .article-1{
+    
+    flex: 70%;
+    
+    
     background-color: #f2f2f2;
     border-radius: 10px 10px 10px 10px;
-    height: 625px;
-    width: 880px;
 }
-.article-1 img{
+.photo-hebergement figure{
+    
     border-radius: 10px 10px 0 0;
     border: 5px solid white;
-    background-color: white;
-    align-items: flex-start;
+    background-color: white;  
+    height: 120px;
+    width: 240px; 
 }
-.article-1 figcaption{
+.photo-hebergement figcaption{
+    
     border-radius: 0 0 10px 10px;
     border: 5px solid white;
     background-color: white;
     margin-top: -10px;
-    padding-left: 10px;
     height: 50px;
-    width: 230px;
+    width: 240px;
 }
 
 /*Mise en forme Article 2*/
 .article-2{
+    flex: 30%;
     background-color: #f2f2f2;
-    height: 625px;
-    width: 420px;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 20px;
+    padding-left: 15px;
+}
+.article-2 h3{
+    flex: 3 1 80%;
+    flex-direction: row;
 }
 #populaire{
+    flex-direction: row;
+    flex: 1 2 auto;
     text-decoration: none;
-    background-color:#f2f2f2;
+    background-color:#f2f2f2;    
+    padding: -50px
+}
+
+.article-2 figure{
+    flex: 1 1 100%
+   
+}
+.article-2 img{
     
+    border-radius: 10px 0 0 10px;
+    border: 5px solid white;
+    background-color: white;
+    height: 130px; 
+    width: 130px;
+    
+}
+.article-2 figcaption{
+    border-radius: 0 10px 10px 0;
+    border: 5px solid white;
+    background-color: white;
+    padding-left: -20px;
+    height: 130px;
+    width: 210px;
 }
 /*Mise en forme Article 3*/
-.article-3{
-    
+.section:nth-of-type(3){
+    order: 3;
+    flex-grow: 100%; 
 }
 /*Mise en forme Article 4*/
-.article-4{
-
+.section:nth-of-type(4){
+    order: 4;
+    flex-grow: 100%;
 }
