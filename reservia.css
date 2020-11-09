@@ -172,39 +172,48 @@ button:hover{
 }
 .section-1{
     display: flex;
-    height: 625px;
+    align-content: flex-start;
+    height: 800px;
     width: auto;
+    margin: 15px 15px 15px 15px;
 }
 .section-2{
     display: flex;
-    height: 625px;
+    height: 610px;
     width: auto;
 } 
 /*Mise en forme Article 1*/
 .article-1{
-    
-    flex: 70%;
-    
-    
+    flex: 70%;  
     background-color: #f2f2f2;
     border-radius: 10px 10px 10px 10px;
+    height: 550px;
+    margin-left: -2%;
 }
-.photo-hebergement figure{
-    
+.hebergement{
+    margin: -20px 0 0 15px;
+}
+.espace-photo-hebergement{
+    height: 15px 15px 15px 15px;
+}
+.photo-hebergement img{
     border-radius: 10px 10px 0 0;
     border: 5px solid white;
-    background-color: white;  
+    background-color: white;
     height: 120px;
-    width: 240px; 
+    width: 230px;
+    margin: -5px 15px 0 15px;
 }
-.photo-hebergement figcaption{
-    
+.photo-hebergement figcaption{    
     border-radius: 0 0 10px 10px;
     border: 5px solid white;
     background-color: white;
-    margin-top: -10px;
+    margin: -10px 15px 0 15px;
     height: 50px;
-    width: 240px;
+    width: 230px;
+}
+.footer-hebergement{ 
+    margin: 50px 0 0 15px;
 }
 
 /*Mise en forme Article 2*/
@@ -212,41 +221,38 @@ button:hover{
     flex: 30%;
     background-color: #f2f2f2;
     border-radius: 10px 10px 10px 10px;
-    margin-left: 20px;
-    padding-left: 15px;
+    margin-left: 15px;
+    padding: 10px 10px 10px 10px;
+    height: 530px;
 }
-.article-2 h3{
-    flex: 3 1 80%;
-    flex-direction: row;
+.populaire{
+    margin-top: -20px;
 }
-#populaire{
-    flex-direction: row;
-    flex: 1 2 auto;
+.populaire i{
     text-decoration: none;
-    background-color:#f2f2f2;    
-    padding: -50px
+    background-color:#f2f2f2;
+    margin-left: 35%;         
 }
-
-.article-2 figure{
-    flex: 1 1 100%
-   
+.table-populaire table{
+    border-collapse: separate;
+    border-spacing: 5%;
 }
-.article-2 img{
-    
+.table-populaire img{
     border-radius: 10px 0 0 10px;
     border: 5px solid white;
-    background-color: white;
-    height: 130px; 
-    width: 130px;
-    
+    background-color: white;      
 }
-.article-2 figcaption{
+.table-populaire figcaption{
     border-radius: 0 10px 10px 0;
     border: 5px solid white;
     background-color: white;
-    padding-left: -20px;
-    height: 130px;
-    width: 210px;
+    margin-bottom: 2%;
+    margin-left: -2%;
+    height: 120px;
+    width: 180px;    
+}
+.table-populaire i{
+    margin-top: 20%;
 }
 /*Mise en forme Article 3*/
 .section:nth-of-type(3){
