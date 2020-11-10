@@ -1,17 +1,15 @@
 /*Mise en forme globale*/
 body{
     font-family: 'Raleway', sans-serif;
-    margin-top: 0 0 0 10%;
+    margin: 0 0 -5% 0;
 }
 h3{
     font-weight: bold;
-    margin-top: 60px;
 }
 h4{
     font-weight: bold;
 }
 p{
-    margin-top: -10px;
     font-size: small;
 }
 table{
@@ -24,6 +22,7 @@ table{
     flex-flow: row wrap;
     justify-content: flex-end;
     align-items: center;
+    margin-right: 3%;
 }
 .menu a{
     margin-left: 30px;
@@ -52,7 +51,12 @@ a:active{
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
-    margin: -40px 0 0 5px;   
+}
+.logo{
+    margin: -2% 3% 0 3%;
+}
+.text-header{
+    margin: 1% 3% 0 3%;
 }
 /*Mise en forme logo*/
 .logo img{
@@ -68,7 +72,7 @@ a:active{
     flex-flow: row wrap;
     align-content: flex-start;
     align-items:flex-end;
-    margin-left: 20px;
+    margin: -1% 3% 2% 3%;
 }
 #map{
     text-decoration: none;
@@ -113,7 +117,7 @@ a:active{
     flex-flow: row wrap;
     justify-content: flex-start;
     align-items: center;
-    margin: 50px 0 0 20px;
+    margin: 2% 3% 0 3%;
 }
 .filtres i{
     text-decoration: none;
@@ -125,7 +129,8 @@ a:active{
     background-color: #deebff;
     color: #0065fc;
     margin-right: -30px;
-    position: relative;z-index: 10;
+    position: relative;
+    z-index: 10;
 }
 .text-filtres{
     font-size: 15px;
@@ -158,13 +163,13 @@ button:hover{
     flex-flow: row wrap;
     align-content: flex-start;
     align-items: center;
-    margin: 20px 0 0 20px;
+    margin: 1% 3% 0 3%;
 }
 .info i{
     color: #0065fc; 
 }
 .info h5{
-    margin-left: 10px;
+    margin-left: 1%;
 }
 /*Mise en forme générale Article*/
 .color-blue{
@@ -178,12 +183,12 @@ button:hover{
     align-content: flex-start;
     height: 800px;
     width: auto;
-    margin: -10px 15px 0 30px;
+    margin: -1% 3% 0 3%;
 }
 .section-2{
     height: 30%;
     width: auto;
-    margin-top: -20%;
+    margin: -15% 3% 0 3%;
 }
 .section-3{
     height: 20%;
@@ -197,37 +202,32 @@ button:hover{
     flex: 70%;  
     background-color: #f2f2f2;
     border-radius: 10px 10px 10px 10px;
-    height: 550px;
-    margin-left: -2%;
+    height: 70%;   
 }
 .hebergement{
-    margin: -20px 0 0 15px;
+    margin: 3% 3% 0 3%;
 }
-.espace-photo-hebergement{
-    height: 15px 15px 15px 15px;
+.table-hebergement{
+    border-spacing: 20px 20px;
+    margin: -2% 3% 0 3%;
 }
 .photo-hebergement img{
     border-radius: 10px 10px 0 0;
     border: 5px solid white;
     background-color: white;
-    height: 120px;
-    width: 230px;
-    margin: -5px 0 0 15px;
 }
 .photo-hebergement figcaption{    
     border-radius: 0 0 10px 10px;
-    
     background-color: white;
-    margin: -10px 0 0 15px;
-    padding: 2% 0 0 2%;
-    height: 70px;
-    width: 235px;
+    margin-top: -2%;
+    padding: 2% 2% 2% 3%;
+    height: 15%;   
 }
 .photo-hebergement i{
     margin-top: 4%;
 }
 .footer-hebergement{ 
-    margin: 50px 0 0 15px;
+    margin: -2% 3% 0 4%;
 }
 
 /*Mise en forme Article 2*/
@@ -235,57 +235,55 @@ button:hover{
     flex: 30%;
     background-color: #f2f2f2;
     border-radius: 10px 10px 10px 10px;
-    margin-left: 15px;
-    padding: 10px 10px 10px 10px;
-    height: 530px;
+    height: 70%;
+    margin-left: 2%;
 }
 .populaire{
-    margin-top: -20px;
+    margin: 3% 3% 0 3%;
+    padding: 1% 0 0 3%;
 }
 .populaire i{
     text-decoration: none;
     background-color:#f2f2f2;
-    margin-left: 35%;         
+    margin-left: 40%;         
 }
 .table-populaire{
-    border-spacing: 10%;
-    
+    border-spacing: 0;
+    margin: -2% 3% 0 3%;
 }
 .table-populaire img{
     border-radius: 10px 0 0 10px;
     border: 5px solid white;
     background-color: white;     
-    margin-left: 5%; 
+    margin-top: -20%;
 }
 .table-populaire figcaption{
     border-radius: 0 10px 10px 0;
     border: 5px solid white;
     background-color: white;
-    margin: 0 5% 2% -11%;
-    padding-left: 2%;
-    height: 120px;
-    width: 190px;    
 }
 .table-populaire i{
     margin-top: 20%;
 }
 /*Mise en forme Article 3*/
-
+.table-activite{
+    border-spacing: 30px;
+    margin: -2% 5% 0 -2%;
+}
 .table-activite img{
     border-radius: 10% 10% 0 0;
     border: #f2f2f2;
     box-shadow: 4px 0px 5px #f2f2f2;
 }
 .table-activite figcaption{
-    height: 5%;
-    width: 272px;
+    height: 10%;   
     border: 2px solid #f2f2f2;
     border-radius: 0 0 10px 10px;
     font-size: small;
     font-weight: bold;
     box-shadow: 4px 4px 5px #f2f2f2;
-    margin: -2% 0 0 -1px;
     padding: 3% 3% 3% 3%;
+    margin-top: -2%;
 }
 /*Mise en forme Article 4*/
 .table-propos td{
@@ -294,4 +292,6 @@ button:hover{
 .column-propos{
     padding-top: 2%;
 }
-
+.table-propos p{
+    line-height: 50%;
+}
