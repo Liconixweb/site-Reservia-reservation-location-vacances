@@ -1,8 +1,7 @@
 /*Mise en forme globale*/
 body{
     font-family: 'Raleway', sans-serif;
-    margin: 0 50px 50px 50px;
-    padding: 0;
+    margin-top: 0 0 0 10%;
 }
 h3{
     font-weight: bold;
@@ -14,6 +13,9 @@ h4{
 p{
     margin-top: -10px;
     font-size: small;
+}
+table{
+    border-collapse: separate;
 }
 /*Mise en forme menu*/
 .menu{
@@ -50,7 +52,7 @@ a:active{
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
-    margin-top: -40px;   
+    margin: -40px 0 0 5px;   
 }
 /*Mise en forme logo*/
 .logo img{
@@ -66,6 +68,7 @@ a:active{
     flex-flow: row wrap;
     align-content: flex-start;
     align-items:flex-end;
+    margin-left: 20px;
 }
 #map{
     text-decoration: none;
@@ -110,7 +113,7 @@ a:active{
     flex-flow: row wrap;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 50px;
+    margin: 50px 0 0 20px;
 }
 .filtres i{
     text-decoration: none;
@@ -155,7 +158,7 @@ button:hover{
     flex-flow: row wrap;
     align-content: flex-start;
     align-items: center;
-    margin-top: 20px;
+    margin: 20px 0 0 20px;
 }
 .info i{
     color: #0065fc; 
@@ -175,13 +178,20 @@ button:hover{
     align-content: flex-start;
     height: 800px;
     width: auto;
-    margin: 15px 15px 15px 15px;
+    margin: -10px 15px 0 30px;
 }
 .section-2{
-    display: flex;
-    height: 610px;
+    height: 30%;
     width: auto;
-} 
+    margin-top: -20%;
+}
+.section-3{
+    height: 20%;
+    width: auto;
+    background-color: #f2f2f2;
+    margin: 5% -1% -10% -1%;
+    padding: 2% ;    
+}
 /*Mise en forme Article 1*/
 .article-1{
     flex: 70%;  
@@ -202,15 +212,19 @@ button:hover{
     background-color: white;
     height: 120px;
     width: 230px;
-    margin: -5px 15px 0 15px;
+    margin: -5px 0 0 15px;
 }
 .photo-hebergement figcaption{    
     border-radius: 0 0 10px 10px;
-    border: 5px solid white;
+    
     background-color: white;
-    margin: -10px 15px 0 15px;
-    height: 50px;
-    width: 230px;
+    margin: -10px 0 0 15px;
+    padding: 2% 0 0 2%;
+    height: 70px;
+    width: 235px;
+}
+.photo-hebergement i{
+    margin-top: 4%;
 }
 .footer-hebergement{ 
     margin: 50px 0 0 15px;
@@ -233,34 +247,51 @@ button:hover{
     background-color:#f2f2f2;
     margin-left: 35%;         
 }
-.table-populaire table{
-    border-collapse: separate;
-    border-spacing: 5%;
+.table-populaire{
+    border-spacing: 10%;
+    
 }
 .table-populaire img{
     border-radius: 10px 0 0 10px;
     border: 5px solid white;
-    background-color: white;      
+    background-color: white;     
+    margin-left: 5%; 
 }
 .table-populaire figcaption{
     border-radius: 0 10px 10px 0;
     border: 5px solid white;
     background-color: white;
-    margin-bottom: 2%;
-    margin-left: -2%;
+    margin: 0 5% 2% -11%;
+    padding-left: 2%;
     height: 120px;
-    width: 180px;    
+    width: 190px;    
 }
 .table-populaire i{
     margin-top: 20%;
 }
 /*Mise en forme Article 3*/
-.section:nth-of-type(3){
-    order: 3;
-    flex-grow: 100%; 
+
+.table-activite img{
+    border-radius: 10% 10% 0 0;
+    border: #f2f2f2;
+    box-shadow: 4px 0px 5px #f2f2f2;
+}
+.table-activite figcaption{
+    height: 5%;
+    width: 272px;
+    border: 2px solid #f2f2f2;
+    border-radius: 0 0 10px 10px;
+    font-size: small;
+    font-weight: bold;
+    box-shadow: 4px 4px 5px #f2f2f2;
+    margin: -2% 0 0 -1px;
+    padding: 3% 3% 3% 3%;
 }
 /*Mise en forme Article 4*/
-.section:nth-of-type(4){
-    order: 4;
-    flex-grow: 100%;
+.table-propos td{
+    width: 45%;
 }
+.column-propos{
+    padding-top: 2%;
+}
+
