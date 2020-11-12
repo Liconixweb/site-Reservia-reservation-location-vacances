@@ -27,7 +27,7 @@ table{
     flex-flow: row nowrap;
     justify-content: flex-end;
     align-items: center;
-    margin-right: -170px;
+    margin-right: -260px;
 }
 .menu a{
     margin-left: 30px;
@@ -41,10 +41,10 @@ table{
     font-weight: bold;
 }
 
-a:visited{
+.menu a:visited{
     color: black;
 }
-a:hover{
+.menu a:hover{
     border-top: medium solid #0065fc;
 }
 /*Mise en forme header général*/
@@ -193,8 +193,7 @@ button:hover{
 .section-1{
     display: flex;
     align-content: flex-start;
-    height: 800px;
-    width: auto;
+    height: 900px;
     margin-top: -3%;
 }
 .section-2{
@@ -211,77 +210,83 @@ button:hover{
 }
 /*Mise en forme Article 1*/
 .article-1{
-    flex: 70%;  
     background-color: #f2f2f2;
     border-radius: 10px 10px 10px 10px;
     height: 70%;   
+    width: 900px;
 }
-td{
-    height: 40%;
-    width: 30%;
+.title-hebergement{
+    margin-top: 3%;
+    margin-left: 3%;
 }
-.hebergement{
-    margin: 3% 3% 0 0;
+.table-hebergement td{
+    height: 190px;
+    width: 250px;
 }
 .table-hebergement{
     border-spacing: 20px 20px;
-    margin: -2% 3% 0 3%;
+    margin-top: -2%;
 }
-.table-hebergement a{
-    color: black;
-}
-.photo-hebergement img{
+.table-hebergement img{
     border-radius: 20px 20px 0 0;
     border: 5px solid white;
     background-color: white;
+    height: 70%;
+    width: 250px;
 }
-.photo-hebergement figcaption{    
+.table-hebergement figcaption{    
     border-radius: 0 0 20px 20px;
     background-color: white;
-    margin-top: -2%;
-    padding: 2% 2% 2% 3%;
-    height: 15%;   
+    border: 5px solid white;
+    margin-top: -3%;
+    padding: 2% 0 2% 5%;
+    height: 30%;  
+    width: 237px; 
 }
-.photo-hebergement i{
+.table-hebergement i{
     margin-top: 4%;
 }
 .footer-hebergement{ 
-    margin: -2% 3% 0 4%;
+    margin-top: 2%;
+    margin-left: 3%;
+    font-size: 80%;
 }
 /*Mise en forme Article 2*/
 .article-2{
-    flex: 30%;
     background-color: #f2f2f2;
     border-radius: 10px 10px 10px 10px;
     height: 70%;
-    margin-left: 2%;
+    width: 1000px;
+    margin-left: 3%;
 }
-.populaire{
+.title-populaire{
     margin: 3% 3% 0 3%;
     padding: 1% 0 0 3%;
 }
-.populaire i{
+.title-populaire i{
     text-decoration: none;
     background-color:#f2f2f2;
-    margin-left: 40%;         
+    margin-left: 20%;         
 }
 .table-populaire{
-    border-spacing: 0 15px;
-    margin: -3% 0 3% 3%;
+    border-spacing: 0 30px;
+    margin: -8% 0 3% 3%;
 }
 .table-populaire img{
     border-radius: 20px 0 0 20px;
     border: 5px solid white;
-    background-color: white;     
+    background-color: white;  
+    height: 120px;
+    width: 120px;
 }
 .table-populaire figcaption{
     border-radius: 0 20px 20px 0;
     border: 5px solid white;
     background-color: white;
-    height: 114px;
-    width: 180px;
-    margin: -2% 2% 0 -2%;
-    padding: 5% 3% 3% 5%;
+    margin: 0;
+    padding: 0;
+    height: 130px;
+    width: 150px;
 }
 .table-populaire i{
     margin-top: 15%;
