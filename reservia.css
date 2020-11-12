@@ -15,6 +15,9 @@ h3{
 p{
     font-size: 80%;
 }
+a{
+    text-decoration: none;
+}
 table{
     border-collapse: separate;
 }
@@ -24,7 +27,7 @@ table{
     flex-flow: row nowrap;
     justify-content: flex-end;
     align-items: center;
-    margin-right: -100px;
+    margin-right: -170px;
 }
 .menu a{
     margin-left: 30px;
@@ -200,6 +203,8 @@ button:hover{
     margin-top: -20%;
 }
 .section-3{
+    display: flex;
+    justify-content: flex-start;
     background-color: #f2f2f2;
     margin-top: -2%;
     padding: -3% 3% 3% 3% ;    
@@ -211,8 +216,12 @@ button:hover{
     border-radius: 10px 10px 10px 10px;
     height: 70%;   
 }
+td{
+    height: 40%;
+    width: 30%;
+}
 .hebergement{
-    margin: 3% 3% 0 3%;
+    margin: 3% 3% 0 0;
 }
 .table-hebergement{
     border-spacing: 20px 20px;
@@ -299,8 +308,8 @@ button:hover{
 }
 /*Mise en forme Article 4*/
 .table-propos{
-    width: 985px;
-    margin: 3% 3% 0 3%;
+    width: auto;
+    margin-top: 3%;
 }
 .table-propos td{
     width: 45%;
