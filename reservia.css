@@ -28,7 +28,7 @@ table{
     flex-flow: row nowrap;
     justify-content: flex-end;
     align-items: center;
-    margin-right: -300px;
+    margin-right: -50px;
 }
 .menu a{
     margin-left: 30px;
@@ -195,145 +195,99 @@ button:hover{
 /*Mise en forme Section 1 / Hébergements*/
 .section-1{
     display: flex;
-    align-content: flex-start;
-    height: 900px;
+    align-content: center;
+    height: 650px;
     margin-top: -3%;
 }
 .hebergement{
-    height: 900px;
-    width: 500px;
+    flex: 70%;
     background-color: #f2f2f2;
-    border-radius: 10px 10px 10px 10px;   
+    border-radius: 20px 20px 20px 20px;   
 }
-.hebergement-title{
-    
+.hebergement-title{    
     height: 20px;
     flex-wrap: nowrap;
-    margin: -20px 0 20px 0;
+    margin: 20px 0 20px 20px;
 }
 .hebergement-photo{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin: 0 10px 0 5px;
 }
 .hebergement-photo img{
     border-radius: 20px 20px 0 0;
-    border: 2px solid #f2f2f2;
+    border: 2px solid white;
     box-shadow: 4px 0px 5px #f2f2f2;
-    height: 200px;
-    width: 300px;
+    height: 150px;
+    width: 200px;  
+    margin-left: 10px;
     overflow: hidden;
     object-fit: cover;
 }
 .hebergement-photo figcaption{
     font-size: 15px;
-    font-weight: bold;
-    height: 50px;
-    margin-top: -10px;
+    line-height: 20px;
+    height: 70px;
+    width: 194px;
+    margin: -10px 0 50px 7px;
     padding: 15px 0 0 10px;
-    border: 2px solid #f2f2f2;
+    border: 3px solid #f2f2f2;
     border-radius: 0 0 20px 20px;
+    background-color: white;
     box-shadow: 4px 4px 5px #f2f2f2;
 }
-/*.hebergement{
-    background-color: #f2f2f2;
-    border-radius: 10px 10px 10px 10px;
-    height: 70%;   
-    width: 900px;
-}
-.hebergement-title{
-    margin-top: 3%;
-    margin-left: 3%;
-}
-.table-hebergement td{
-    height: 190px;
-    width: 250px;
-}
-.table-hebergement{
-    border-spacing: 20px 20px;
-    margin-top: -2%;
-}
-.table-hebergement img{
-    border-radius: 20px 20px 0 0;
-    border: 5px solid white;
-    background-color: white;
-    height: 70%;
-    width: 250px;
-    object-fit: cover;
-}
-.table-hebergement figcaption{    
-    border-radius: 0 0 20px 20px;
-    background-color: white;
-    border: 5px solid white;
-    margin-top: -3%;
-    padding: 0 0 2% 5%;
-    height: 30%;  
-    width: 237px; 
-    line-height: 22px;
-}
-.table-hebergement i{
-    margin-top: 1%;
-}*/
 .footer-hebergement{ 
-    margin-top: 2%;
-    margin-left: 3%;
+    margin-top: -20px;
+    margin-left: 20px;
     font-size: 80%;
 }
-/*Mise en forme Section 1 / Les plus populaires
-.populaire{
+/*Mise en forme Section 1 / Les plus populaires*/
+.populaire{     
+    flex: 30%;
     background-color: #f2f2f2;
-    border-radius: 10px 10px 10px 10px;
-    height: 70%;
-    width: max-content;
-    margin-left: 3%;
+    border-radius: 10px 10px 10px 10px;   
+    margin-left: 30px;
 }
-.title-populaire{
-    margin: 3% 3% 0 3%;
-    padding: 1% 0 0 3%;
+.populaire-title{    
+    height: 20px;
+    margin: 20px 0 20px 20px;
 }
-.title-populaire i{
-    text-decoration: none;
-    background-color:#f2f2f2;
-    margin-left: 20%;         
+.populaire-title i{
+    margin-left: 30px;
 }
-.table-populaire{
-    border-spacing: 0 40px;
-    margin: -12% 0 3% 3%;
+.polulaire-photo{
+   
+    
 }
-.table-populaire img{
+.populaire img{
+    flex: 30%;
     border-radius: 20px 0 0 20px;
-    border: 5px solid white;
-    background-color: white;  
-    height: 130px;
-    width: 130px;
-}
-.table-populaire figcaption{
-    border-radius: 0 20px 20px 0;
-    border:5px solid white;
-    background-color: white;
-    margin: -4px 0 0 -5px;
-}
-.table-populaire-title{    
-    margin: 0;
-    padding-top: 2%;
-    height: 26px;
+    border: 2px solid #f2f2f2;
+    box-shadow: 4px 0px 5px #f2f2f2;
+    height: 150px;
     width: 150px;
+    margin-left: 20px;
+    overflow: hidden;
+    object-fit: cover;
 }
-.table-populaire-detail{    
-    margin: 0 0 0 0;
-    padding: 15px 0 0 0;
-    height: 80px;
-    width: 150px;
+.populaire-photo figcaption{
     font-size: 15px;
+    line-height: 20px;
+    height: 150px;
+    width: 200px;
+    margin-left: 20px;
+    padding: 15px 0 0 10px;
+    border: 2px solid #f2f2f2;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 4px 4px 5px #f2f2f2;
+    
 }
-.table-populaire i{
-    padding-top: 40px;
-}*/
 /*Mise en forme Section 2 / Activités*/
 .activite{
     height: 500px;
     width: auto;
-    margin-top: -220px;
+    
 }
 .activite-title{
     display: flex;
@@ -343,6 +297,7 @@ button:hover{
 .activite-photo{
     display: flex;
     justify-content: space-between;
+    margin-top: 40px;
 }
 .activite-photo-xlarge{
     display: flex;
@@ -352,8 +307,8 @@ button:hover{
     border-radius: 20px 20px 0 0;
     border: 2px solid #f2f2f2;
     box-shadow: 4px 0px 5px #f2f2f2;
-    height: 400px;
-    width: 300px;
+    height: 350px;
+    width: 250px;
     overflow: hidden;
     object-fit: cover;
 }
@@ -367,8 +322,8 @@ button:hover{
     border-radius: 20px 20px 0 0;
     border: 2px solid #f2f2f2;
     box-shadow: 4px 0px 5px #f2f2f2;
-    height: 160px;
-    width: 300px;
+    height: 100px;
+    width: 250px;
     overflow: hidden;
     object-fit: cover;
 }
