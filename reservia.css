@@ -5,7 +5,7 @@ body{
     max-width: 985px;
 }
 h1,h2{
-    font-size: 120%;
+    font-size: 110%;
     font-weight: bold;
 }
 h3{
@@ -14,13 +14,10 @@ h3{
 }
 p{
     font-size: 80%;
+    font-weight: lighter;
 }
 a{
     text-decoration: none;
-}
-table{
-    border-collapse: separate;
-    vertical-align: top;
 }
 /*Mise en forme Menu*/
 .menu{      
@@ -28,7 +25,7 @@ table{
     flex-flow: row nowrap;
     justify-content: flex-end;
     align-items: center;
-    margin-right: -50px;
+    margin-right: 0px;
 }
 .menu a{
     margin-left: 30px;
@@ -41,7 +38,6 @@ table{
 #font-inscription{
     font-weight: bold;
 }
-
 .menu a:visited{
     color: black;
 }
@@ -195,167 +191,178 @@ button:hover{
 /*Mise en forme Section 1 / Hébergements*/
 .section-1{
     display: flex;
-    align-content: center;
-    height: 650px;
+    height: 480px;
     margin-top: -3%;
 }
 .hebergement{
-    flex: 70%;
+    display: flex;
+    flex-direction: column;
     background-color: #f2f2f2;
     border-radius: 20px 20px 20px 20px;   
+    width: 670px;
 }
 .hebergement-title{    
     height: 20px;
-    flex-wrap: nowrap;
     margin: 20px 0 20px 20px;
+}
+.figure{
+    width: 190px;
+    height: 150px;
+    margin-bottom: 30px;
 }
 .hebergement-photo{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0 10px 0 5px;
+    flex-wrap: wrap;    
+    justify-content: space-between;
+    margin: 20px 20px 20px 20px;
 }
 .hebergement-photo img{
     border-radius: 20px 20px 0 0;
-    border: 2px solid white;
-    box-shadow: 4px 0px 5px #f2f2f2;
-    height: 150px;
-    width: 200px;  
-    margin-left: 10px;
+    border: 5px solid white;
+    box-shadow: 4px 4px 0 4px 5px #f2f2f2;
+    height: 90px;
+    width: 180px;
     overflow: hidden;
     object-fit: cover;
 }
 .hebergement-photo figcaption{
-    font-size: 15px;
-    line-height: 20px;
-    height: 70px;
-    width: 194px;
-    margin: -10px 0 50px 7px;
-    padding: 15px 0 0 10px;
-    border: 3px solid #f2f2f2;
+    font-size: 12px;
+    line-height: 18px;
+    margin: -5px 0 30px 0;
+    padding-left: 10px;
     border-radius: 0 0 20px 20px;
+    border: 5px solid white;
     background-color: white;
     box-shadow: 4px 4px 5px #f2f2f2;
 }
 .footer-hebergement{ 
-    margin-top: -20px;
-    margin-left: 20px;
+    margin: -20px 0 20px 20px;
     font-size: 80%;
+    line-height: 20px;
 }
 /*Mise en forme Section 1 / Les plus populaires*/
 .populaire{     
-    flex: 30%;
+    display: flex;
+    flex-direction: column;
     background-color: #f2f2f2;
-    border-radius: 10px 10px 10px 10px;   
+    border-radius: 20px 20px 20px 20px;   
     margin-left: 30px;
+    width: 315px;
 }
 .populaire-title{    
     height: 20px;
     margin: 20px 0 20px 20px;
 }
 .populaire-title i{
-    margin-left: 30px;
+    margin-left: 70px;
 }
-.polulaire-photo{
-   
-    
+.populaire-photo{
+    /*display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;*/
+    margin: 20px 20px 20px 20px;  
 }
-.populaire img{
-    flex: 30%;
-    border-radius: 20px 0 0 20px;
-    border: 2px solid #f2f2f2;
-    box-shadow: 4px 0px 5px #f2f2f2;
+.figure-populaire{
+    display: flex;
+    flex-flow: column wrap; 
+    width: 265px;
+    height: 135px;
+    margin-bottom: 00px;
+}
+/*.populaire-photo:nth-child(){
     height: 150px;
-    width: 150px;
-    margin-left: 20px;
+    width: 250px;
+}*/
+.populaire-photo img{
+    border-radius: 20px 0 0 20px;
+    border: 3px solid white;
+    box-shadow: 4px 0 4px 4px 5px #f2f2f2;
+    height: 100px;
+    width: 100px;
+    margin-left: 0px;
     overflow: hidden;
     object-fit: cover;
 }
-.populaire-photo figcaption{
-    font-size: 15px;
-    line-height: 20px;
-    height: 150px;
-    width: 200px;
-    margin-left: 20px;
-    padding: 15px 0 0 10px;
-    border: 2px solid #f2f2f2;
+.populaire-photo figcaption{    
+    font-size: 12px;
+    line-height: 17px;
+    width: 140px;
+    margin-top: -0px;
+    margin-left: -5px;
+    padding: 5px 0 0 10px;
+    border: 3px solid white;
     border-radius: 0 20px 20px 0;
-    box-shadow: 4px 4px 5px #f2f2f2;
-    
+    background-color: white;
+    box-shadow: 4px 4px 4px 0 5px #f2f2f2;
+
+}
+.figure-populaire i{
+    margin-top: 30px;
 }
 /*Mise en forme Section 2 / Activités*/
 .activite{
-    height: 500px;
-    width: auto;
-    
-}
-.activite-title{
     display: flex;
-    height: 20px;
-    flex-wrap: nowrap;
+    flex-direction: column;
+    height: 420px;  
+    width: 985px;
+    margin-top: 30px;
+}
+.activite-title{    
+    height: 30px;  
 }
 .activite-photo{
     display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-}
-.activite-photo-xlarge{
-    display: flex;
+    margin-top: 20px;
     justify-content: space-between;
 }
 .activite-photo-xlarge img{   
     border-radius: 20px 20px 0 0;
-    border: 2px solid #f2f2f2;
-    box-shadow: 4px 0px 5px #f2f2f2;
-    height: 350px;
-    width: 250px;
+    box-shadow: 4px 4px 0 4px 5px #f2f2f2;
+    height: 300px;
+    width: 220px;
     overflow: hidden;
     object-fit: cover;
-}
-.activite-photo-large{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 .activite-photo-large img{
-    flex: auto;
     border-radius: 20px 20px 0 0;
-    border: 2px solid #f2f2f2;
-    box-shadow: 4px 0px 5px #f2f2f2;
-    height: 100px;
-    width: 250px;
+    box-shadow: 4px 4px 0 4px 5px #f2f2f2;
+    height: 110px;
+    margin-left:-30px;
+    width: 220px;
     overflow: hidden;
     object-fit: cover;
 }
-.activite-photo figcaption{
-    font-size: 15px;
+.activite-photo-xlarge figcaption{
+    font-size: 12px;
+    line-height: 50px;
     font-weight: bold;
-    height: 30px;
-    margin-top: -10px;
-    padding: 15px 0 0 10px;
-    border: 2px solid #f2f2f2;
+    margin-top: -5px;
+    margin-bottom: 30px;
+    padding-left: 10px;
     border-radius: 0 0 20px 20px;
+    background-color: white;
     box-shadow: 4px 4px 5px #f2f2f2;
 }
-/*Mise en forme Section 3 / A propos
-.table-propos{
-    
-    height: 150px;
-    margin-top: 5%;
-    padding-top: -50px;
-    border-spacing: 100px;
+.activite-photo-large figcaption{
+    font-size: 12px;
+    line-height: 50px;
+    font-weight: bold;
+    margin-top: -5px;
+    margin-bottom: 30px;
+    margin-left:-30px;
+    padding-left: 10px;
+    border-radius: 0 0 20px 20px;
+    background-color: white;
+    box-shadow: 4px 4px 5px #f2f2f2;
 }
-.table-propos td{
-    width: 300px;
-}
-.table-propos p{
-    line-height: 50%;
-}
-*/
+/*Mise en forme Section 3 / A propos*/
 .propos{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     background-color: #f2f2f2;
-    
-
+    height: 150px;
+    padding-top: 20px;
+}
+.texte-propos{
+    width: 328px;
 }
