@@ -1,8 +1,9 @@
 /*Mise en forme globale*/
 body{
     font-family: 'Raleway', sans-serif;
-    margin: 0 auto;
+    margin: 0 10px 0 10px;
     max-width: 985px;
+    
 }
 *{
     box-sizing: border-box;
@@ -19,28 +20,84 @@ p,a{
     font-weight: lighter;
     text-decoration: none;
 }
+img{
+    max-width: 100%;
+    height: auto;
+}
+@media all and (max-width: 480px){
+    body{
+        margin: 0 20px 0 20px;
+    }
+}
 /*Mise en forme Menu*/
 .menu{      
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
-    align-items: centre;
 }
-.menu a{
-    margin-left: 60px;   
+.menu div{
+    margin-left: 10px;   
     line-height: 70px;
+    padding: 0 20px 20px 20px;
     color: #0065fc;
-    border-top: medium solid white;
+    border-top: 2px solid white;
     text-decoration: none;
 }
 #font-inscription{
     font-weight: bold;
 }
-.menu a:visited{
+.menu div:visited{
     color: black;
 }
-.menu a:hover{
-    border-top: medium solid #0065fc;
+.menu div:hover{
+    border-top: 2px solid #0065fc;
+}
+@media all and (max-width: 480px){
+    .menu {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 160px;
+        width: 480px;
+    }
+    .menu div{
+        border-top: none;
+        line-height: 45px;
+        margin: 0;
+        color: #0065fc;
+    }
+    .menu div:nth-child(1){
+        flex-basis: 50%;
+        order: 2;
+        border-bottom: 2px solid #f2f2f2;
+        text-align: center;
+        margin: -50px 0 0 -20px;
+        padding: 20px 20px 0 20px;
+    }
+    .menu div:nth-child(2){
+        flex-basis: 50%;
+        order: 3;
+        border-bottom: 2px solid #f2f2f2;
+        text-align: center;
+        margin: -50px 0px 0 -10px;
+        padding: 20px 20px 0 20px;
+    }
+    .menu div:nth-child(3){
+        order: 1;
+        width: 480px;
+        padding-left: 360px;
+        margin-top: 20px;
+        border: none;
+    }
+    .menu div:hover{
+        border-top: none;   
+    }
+    .menu div:nth-child(1):hover{
+        border-bottom: 2px solid #0065fc;
+    }
+    .menu div:nth-child(2):hover{
+        border-bottom: 2px solid #0065fc;
+    }
 }
 /*Mise en forme Header général*/
 .header{
@@ -48,6 +105,11 @@ p,a{
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
+}
+@media all and (max-width: 480px){
+    .header{
+        flex-flow: column wrap;
+    }
 }
 /*Mise en forme Logo*/
 .logo img{
@@ -57,23 +119,37 @@ p,a{
 .logo{
     margin-top: -40px;
 }
+@media all and (max-width: 480px){
+    .logo{
+        margin-top: -140px;
+    }
+}
 /*Mise en forme Text du header*/
 .header-texte{
     margin-top: 20px;
+}
+@media all and (max-width: 480px){
+    .logo{
+        margin-top: -140px;
+    }
+    .header-texte{
+        margin-top: 80px;
+    }
 }
 /*Mise en forme du Formulaire*/
 .formulaire{
     height: 50px;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     align-content: flex-start;
     margin-top: -30px;
 }
 .formulaire i{
     text-decoration: none;
     text-align: center;
-    width: 40px;
-    line-height: 40px;
+    width: 30px;
+    line-height: 30px;
+    height: 35px;
     padding-left: 5px;
     border: 2px solid #f2f2f2;
     border-radius: 20px 0 0 20px;
@@ -85,7 +161,8 @@ p,a{
     font-weight: bold;
     font-size: 14px;
     width: 180px;
-    line-height: 40px;
+    line-height: 35px;
+    height: 35px;
     margin-left: -1px;
     color: black;
     border: 2px solid #f2f2f2;
@@ -99,7 +176,8 @@ p,a{
     text-align: center;
     font-weight: bold;
     font-size: 14px;
-    line-height: 40px; 
+    line-height: 30px; 
+    height: 35px;
     width: 100px;
     color: white;
     background-color: #0065fc;
@@ -109,18 +187,19 @@ p,a{
     cursor: pointer;
     margin-left: -5px;    
 }
+@media all and (max-width: 480px){
+    .formulaire{
+        margin-top: -50px;
+        justify-content: center;
+    }
+}
 /*Mise en forme des Filtres*/
 .filtres{
     height: 30px;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-    margin-top: 20px;
-}
-@media (max-width: 450px){
-    .filtres{
-        flex-flow: column wrap;
-    }
+    margin-top: 15px;
 }
 .filtres-title{        
     margin: auto 20px auto 0;    
@@ -141,7 +220,6 @@ p,a{
     background-color: #deebff;
     color: #0065fc;
     margin-right: -15px;
-    
     z-index: 10;
 }
 .filtres button{
@@ -155,6 +233,15 @@ p,a{
     margin-right: 20px;
     padding: 0 15px 0 30px;
     cursor: pointer;
+}
+@media all and (max-width: 480px){
+    .filtres{
+        margin-top: 10px;
+    }
+    .filtres-title{
+        flex-basis: 100%;
+    }
+
 }
 /*Effet des boutons des Filtres*/
 button:hover{
@@ -201,7 +288,7 @@ button:hover{
     margin: 20px 0 0 30px;
 }
 .hebergement-figure{
-    width: 190px;
+    width: auto;
     height: 150px;
     margin-bottom: 30px;
 }
@@ -256,7 +343,7 @@ button:hover{
 .populaire-photo{    
     margin: 30px 30px 30px 30px;  
 }
-.figure-populaire{
+.populaire-figure{
     display: flex;
     flex-flow: column wrap; 
     width: 265px;
@@ -290,7 +377,7 @@ button:hover{
     flex-direction: column;
     height: 420px;  
     width: 985px;
-    margin-top: 30px;
+    margin: 30px 0;
 }
 .activite-title{    
     height: 30px;  
@@ -300,11 +387,24 @@ button:hover{
     margin-top: 20px;
     justify-content: space-between;
 }
+.activite-photo-xlarge{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin-left: 0px;
+    width: 215px;
+}
+.activite-photo-large{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 215px;
+}
 .activite-photo-xlarge img{   
     border-radius: 20px 20px 0 0;
     box-shadow: 4px 4px 0 4px 5px #f2f2f2;
     height: 300px;
-    width: 220px;
+    width: auto;
     overflow: hidden;
     object-fit: cover;
 }
@@ -312,8 +412,8 @@ button:hover{
     border-radius: 20px 20px 0 0;
     box-shadow: 4px 4px 0 4px 5px #f2f2f2;
     height: 110px;
-    margin-left:-30px;
-    width: 220px;
+    margin-left: 0;
+    width: 215px;
     overflow: hidden;
     object-fit: cover;
 }
@@ -321,24 +421,21 @@ button:hover{
     font-size: 12px;
     line-height: 50px;
     font-weight: bold;
-    margin-top: -5px;
-    margin-bottom: 30px;
+    margin: -2px 0 30px 0;
     padding-left: 10px;
     border-radius: 0 0 20px 20px;
     background-color: white;
-    box-shadow: 4px 4px 5px #f2f2f2;
+    box-shadow: 4px 4px 6px #f2f2f2;
 }
 .activite-photo-large figcaption{
     font-size: 12px;
     line-height: 50px;
-    font-weight: bold;
-    margin-top: -5px;
-    margin-bottom: 30px;
-    margin-left:-30px;
+    font-weight: bold;    
+    margin: -2px 0 30px 0;
     padding-left: 10px;
     border-radius: 0 0 20px 20px;
     background-color: white;
-    box-shadow: 4px 4px 5px #f2f2f2;
+    box-shadow: 4px 4px 6px #f2f2f2;
 }
 /*Mise en forme Section 3 / A propos*/
 .propos{
