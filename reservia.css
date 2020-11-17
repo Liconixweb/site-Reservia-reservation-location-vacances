@@ -3,7 +3,7 @@ body{
     font-family: 'Raleway', sans-serif;
     margin: 0 10px 0 10px;
     max-width: 985px;
-    
+    min-width: 475px;    
 }
 *{
     box-sizing: border-box;
@@ -20,13 +20,18 @@ p,a{
     font-weight: lighter;
     text-decoration: none;
 }
-img{
-    max-width: 100%;
-    height: auto;
-}
 @media all and (max-width: 480px){
     body{
-        margin: 0 20px 0 20px;
+        margin: 0 15px 0 15px;
+    }
+    h1,h2{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    p,a{
+        font-size: 16px;
     }
 }
 /*Mise en forme Menu*/
@@ -147,9 +152,9 @@ img{
 .formulaire i{
     text-decoration: none;
     text-align: center;
-    width: 30px;
-    line-height: 30px;
+    width: 40px;
     height: 35px;
+    line-height: 30px;
     padding-left: 5px;
     border: 2px solid #f2f2f2;
     border-radius: 20px 0 0 20px;
@@ -189,32 +194,33 @@ img{
 }
 @media all and (max-width: 480px){
     .formulaire{
-        margin-top: -50px;
+        margin-top: -20px;
+        margin-left: -10px;
         justify-content: center;
     }
 }
 /*Mise en forme des Filtres*/
 .filtres{
-    height: 30px;
+    height: 45px;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
+    flex-flow: row wrap;   
     margin-top: 15px;
 }
 .filtres-title{        
-    margin: auto 20px auto 0;    
+    margin-right: 30px;  
+    line-height: 10px;
 }
-.filtres-texte{    
-    font-size: 14px;
-    text-align: center;
-    vertical-align: middle;
-    font-weight: bold;
+.filtres-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
 }
 .filtres i{
     text-align: center;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
     border: 2px solid #f2f2f2;
     border-radius: 100%;
     background-color: #deebff;
@@ -222,32 +228,52 @@ img{
     margin-right: -15px;
     z-index: 10;
 }
-.filtres button{
+.filtres-texte{
+    font-size: 14px;
     text-align: center;
+    font-weight: bold;
     height: 30px;
+    line-height: auto;
     width: auto;
     border: 2px solid #f2f2f2;
     border-left-color: transparent;
     border-radius: 0 20px 20px 0;
     background-color: transparent;
-    margin-right: 20px;
-    padding: 0 15px 0 30px;
+    margin: 0 20px 0 -5px;
+    padding: 0 15px 0 25px;
     cursor: pointer;
+    z-index: 2;
 }
 @media all and (max-width: 480px){
-    .filtres{
-        margin-top: 10px;
+    .filtres{        
+        margin-top: 0;
+        justify-content: flex-start;
+        height: 120px;
     }
     .filtres-title{
         flex-basis: 100%;
+        height: 40px;     
+    }    
+    .filtres-button{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;   
+        margin-top: -40px;    
     }
-
+    .filtres-button:nth-child(1){
+        line-height: 45px;
+    }
+    .filtres-button:nth-child(2){
+        line-height: 45px;
+    }
 }
 /*Effet des boutons des Filtres*/
-button:hover{
-    border: 5px groove #0065fc;
+.filtres button:hover{
+    border: 4px groove #0065fc;
+    border-left-color: transparent;
     color: #0065fc;
     font-weight: bold;
+    z-index: 1;
 }
 /*Mise en forme Info*/
 .info{
@@ -262,6 +288,18 @@ button:hover{
     color: #0065fc; 
     padding-right: 10px;
 }
+@media all and (max-width: 480px){
+    .info{
+        margin-top: 30px;
+        margin-left: 5px;
+        margin-bottom: 650px;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+    .info p{
+       margin: 0;
+    }
+}
 /*Mise en forme générale Section*/
 .color-blue{
     color: #0065fc;
@@ -269,11 +307,10 @@ button:hover{
 .color-grey{
     color: #f2f2f2;
 }
-
 /*Mise en forme Section 1 / Hébergements*/
 .section-1{
     display: flex;
-    height: 480px;
+    height: auto;
     margin-top: -50px;
 }
 .hebergement{
@@ -288,7 +325,7 @@ button:hover{
     margin: 20px 0 0 30px;
 }
 .hebergement-figure{
-    width: auto;
+    width: 190px;
     height: 150px;
     margin-bottom: 30px;
 }
@@ -318,11 +355,48 @@ button:hover{
     background-color: white;
     box-shadow: 4px 4px 5px #f2f2f2;
 }
-.footer-hebergement{ 
+.hebergement-footer{ 
     margin: -20px 0 20px 30px;
     font-size: 12px;
     line-height: 20px;
     font-weight: bold;
+}
+@media all and (max-width: 480px){
+    .section-1{
+        flex-direction: column-reverse;
+        margin-top: -700px;
+    }
+    .hebergement{
+        background-color: white;
+        width: 480px;
+        margin-left: -15px;
+    }
+    .hebergement-photo{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        align-content: space-between;
+        margin-bottom: 80px;
+    }
+    .hebergement-figure{
+        height: 250px;
+        width: 440px;
+    }
+    .hebergement-photo img{
+        height: 180px;
+        width: 400px;
+        box-shadow: 4px 4px 0 4px 5px #f2f2f2;
+    }
+    .hebergement-photo figcaption{
+        font-size: 18px;
+        height: 90px;
+        line-height: 25px;
+        width: 398px;
+        box-shadow: 0 4px 4px 4px 5px #f2f2f2;
+    }
+    .hebergement-footer{
+        margin-top: -60px;
+    }
 }
 /*Mise en forme Section 1 / Les plus populaires*/
 .populaire{     
@@ -371,6 +445,38 @@ button:hover{
     background-color: white;
     box-shadow: 4px 4px 4px 0 5px #f2f2f2;
 }
+@media all and (max-width: 480px){
+    .populaire{
+        width: 480px;
+        margin-left: -20px;
+        border-radius: 0;
+    }
+    .populaire-title i{
+        margin-left: 200px;
+    }
+    .populaire-figure{
+        width: auto;
+        height: 200px;
+        margin-top: 20px;
+    }
+    .populaire-photo img{
+        border: 5px solid white;
+        height: 180px;
+        width: 180px;
+    }
+    .populaire-photo figcaption{   
+        border: 5px solid white; 
+        height: 180px;
+        width: 260px;
+        line-height: 20px;
+        font-size: 18px;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    .populaire-figure i{
+        padding-top: 60px;
+    }
+}
 /*Mise en forme Section 2 / Activités*/
 .activite{
     display: flex;
@@ -387,24 +493,11 @@ button:hover{
     margin-top: 20px;
     justify-content: space-between;
 }
-.activite-photo-xlarge{
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    margin-left: 0px;
-    width: 215px;
-}
-.activite-photo-large{
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    width: 215px;
-}
 .activite-photo-xlarge img{   
     border-radius: 20px 20px 0 0;
     box-shadow: 4px 4px 0 4px 5px #f2f2f2;
     height: 300px;
-    width: auto;
+    width: 220px;
     overflow: hidden;
     object-fit: cover;
 }
@@ -437,6 +530,46 @@ button:hover{
     background-color: white;
     box-shadow: 4px 4px 6px #f2f2f2;
 }
+@media all and (max-width: 480px){
+    .activite{
+        flex-direction: column;
+        width: 480px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .activite-title{
+        margin-bottom: 20px;
+    }
+    .activite-photo{
+        flex-direction: column;
+        
+        height: 250px;
+        width: 440px;
+    }
+    .activite-photo-xlarge img{
+        
+        height: 180px;
+        width: 400px;
+    }
+    .activite-photo-large img{
+        height: 180px;
+        width: 400px;
+    }
+    .activite-photo-xlarge figcaption{
+        font-size: 18px;
+        height: 50px;        
+        width: 398px;
+        line-height: 25px;
+        padding: 10px 0 0 20px;
+    }
+    .activite-photo-large figcaption{
+        font-size: 18px;
+        height: 50px;
+        width: 398px;
+        line-height: 25px;
+        padding: 10px 0 0 20px;
+    }
+}
 /*Mise en forme Section 3 / A propos*/
 .propos{
     display: flex;
@@ -449,4 +582,16 @@ button:hover{
 }
 .propos-texte{
     width: 328px;
+}
+@media all and (max-width: 480px){
+    .propos{
+        flex-direction: column;
+        width: 480px;
+        height: auto;
+        margin-top: 1250px;
+    }
+    .propos-texte{
+        width: 440px;
+        padding-left: 10px;
+    }
 }

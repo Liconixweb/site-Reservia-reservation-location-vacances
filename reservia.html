@@ -36,29 +36,43 @@
             </div>
             <!--Formulaire-->
             <div class="formulaire">
-                <i class="fas fa-map-marker-alt fa-1x"></i>
-                <form method="post" action ="traitement.php">
-                    <input type="text" name="ville" id="ville" placeholder="Marseille, France" maxlength="100" autofocus/>
-                    <input type="submit" value="Rechercher" id="rechercher"/>
-                </form>
-                          
+                <div>
+                    <i class="fas fa-map-marker-alt fa-1x"></i>
+                </div>
+                    <form method="post" action ="traitement.php">
+                        <input type="text" name="ville" id="ville" placeholder="Marseille, France" maxlength="100" autofocus/>
+                        <input type="submit" value="Rechercher" id="rechercher"/>
+                    </form>
+                </div>                          
             </div>
             <!--Filtres-->
             <div class="filtres">
-                <h3 class="filtres-title">Filtres</h3>
-                <i class="fas fa-money-bill-wave-alt"></i>
-                <button class="filtres-texte">Économique</button>
-                <i class="fas fa-child"></i>
-                <button class="filtres-texte">Familial</button>
-                <i class="fas fa-heart"></i>
-                <button class="filtres-texte">Romantique</button>
-                <i class="fas fa-dog"></i>
-                <button class="filtres-texte">Animaux autorisés</button>
+                <div class="filtres-title">
+                    <h3>Filtres</h3>
+                </div>
+                <div class="filtres-button">
+                    <div>
+                        <i class="fas fa-money-bill-wave-alt"></i>
+                        <button class="filtres-texte">Économique</button>
+                        <i class="fas fa-child"></i>
+                        <button class="filtres-texte">Familial</button>
+                    </div>
+                    <div>
+                        <i class="fas fa-heart"></i>
+                        <button class="filtres-texte">Romantique</button>
+                        <i class="fas fa-dog"></i>
+                        <button class="filtres-texte">Animaux autorisés</button>    
+                    </div>
+                </div>  
             </div>
             <!--Info-->    
             <div class="info">
-                <i class="fas fa-info-circle fa-1x"></i>
-                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                <div>
+                    <i class="fas fa-info-circle fa-1x"></i>
+                </div>
+                <div>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
             </div>              
         </header>
         <!--Section 1 / Hébergements-->
@@ -101,7 +115,7 @@
                                 <figcaption><strong>Hôtel chez Amina</strong><br/>Nuit à partir de <strong>96€</strong><br/><i class="fas fa-star color-blue"></i><i class="fas fa-star color-blue"></i><i class="fas fa-star color-blue"></i><i class="fas fa-star color-blue"></i><i class="fas fa-star color-blue"></i></figcaption>
                         </div>
                     </div> 
-                    <div class="footer-hebergement">
+                    <div class="hebergement-footer">
                         <a href=""><strong>Afficher plus</strong></a>
                     </div>
                 </div>
@@ -112,19 +126,19 @@
                     </div>
                     <div class="populaire-photo">    
                         <div class="populaire-figure">
-                                <a href=""></a>
-                                <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Photo Hôtel Le soleil du matin"/>
-                                <figcaption><strong>Hôtel Le soleil du<br/>matin</strong></br>Nuit à partir de <strong>128€</strong><br/><i class="fas fa-star color-blue"></i><i class="fas fa-star color-blue"></i><i class="fas fa-star color-blue"></i><i class="fas fa-star color-blue"></i><i class="fas fa-star color-blue"></i></figcaption>
+                            <a href=""></a>
+                            <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Photo Hôtel Le soleil du matin"/>
+                            <figcaption><strong>Hôtel Le soleil du<br/>matin</strong></br>Nuit à partir de <strong>128€</strong><br/><i class="fas fa-star color-blue"></i><i class="fas fa-star color-blue"></i><i class="fas fa-star color-blue"></i><i class="fas fa-star color-blue"></i><i class="fas fa-star color-blue"></i></figcaption>
                         </div>
                         <div class="populaire-figure">
-                                <a href=""></a>
-                                <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Photo Au coeur de l'eau Chambres d'hôtes"/>
-                                <figcaption><strong>Au cœur de l'eau<br/>Chambres d'hôtes</strong></br>Nuit à partir de <strong>71€</strong><br/><i class="fas fa-star color-blue"></i><i class="fas fa-star color-blue"></i><i class="fas fa-star color-blue"></i><i class="fas fa-star color-blue"></i><i class="fas fa-star color-grey"></i></figcaption>
+                            <a href=""></a>
+                            <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Photo Au coeur de l'eau Chambres d'hôtes"/>
+                            <figcaption><strong>Au cœur de l'eau<br/>Chambres d'hôtes</strong></br>Nuit à partir de <strong>71€</strong><br/><i class="fas fa-star color-blue"></i><i class="fas fa-star color-blue"></i><i class="fas fa-star color-blue"></i><i class="fas fa-star color-blue"></i><i class="fas fa-star color-grey"></i></figcaption>
                         </div>
                         <div class="populaire-figure">
-                                <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Photo Hôtel Tout bleu et Blanc"/>
-                                <figcaption><strong>Hôtel Tout bleu et</br>Blanc</br></strong>Nuit à partir de <strong>68€</strong><br/><i class="fas fa-star color-blue"></i><i class="fas fa-star color-blue"></i><i class="fas fa-star color-blue"></i><i class="fas fa-star color-blue"></i><i class="fas fa-star color-grey"></i></figcaption>
-                                <a href=""></a>  
+                            <a href=""></a>  
+                            <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Photo Hôtel Tout bleu et Blanc"/>
+                            <figcaption><strong>Hôtel Tout bleu et</br>Blanc</br></strong>Nuit à partir de <strong>68€</strong><br/><i class="fas fa-star color-blue"></i><i class="fas fa-star color-blue"></i><i class="fas fa-star color-blue"></i><i class="fas fa-star color-blue"></i><i class="fas fa-star color-grey"></i></figcaption>
                         </div>    
                     </div>
             </div>
