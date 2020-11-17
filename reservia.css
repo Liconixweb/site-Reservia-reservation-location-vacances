@@ -34,6 +34,17 @@ p,a{
         font-size: 16px;
     }
 }
+@media all and (max-width: 780px){
+    h1,h2{
+        font-size: 18px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    p,a{
+        font-size: 14px;
+    }
+}
 /*Mise en forme Menu*/
 .menu{      
     display: flex;
@@ -114,6 +125,7 @@ p,a{
 @media all and (max-width: 480px){
     .header{
         flex-flow: column wrap;
+        width: 470px;
     }
 }
 /*Mise en forme Logo*/
@@ -247,6 +259,7 @@ p,a{
 @media all and (max-width: 480px){
     .filtres{        
         margin-top: 0;
+        margin-bottom: 100px;
         justify-content: flex-start;
         height: 120px;
     }
@@ -265,6 +278,14 @@ p,a{
     }
     .filtres-button:nth-child(2){
         line-height: 45px;
+    }
+}
+@media all and (max-width: 780px){
+    .filtres{        
+        margin-top: 0;
+        justify-content: flex-start;
+        height: 120px;
+        width: 780px;
     }
 }
 /*Effet des boutons des Filtres*/
@@ -290,14 +311,20 @@ p,a{
 }
 @media all and (max-width: 480px){
     .info{
-        margin-top: 30px;
+        margin-top: 250px;
         margin-left: 5px;
         margin-bottom: 650px;
         flex-wrap: nowrap;
         align-items: flex-start;
+        height: 50px;
     }
     .info p{
        margin: 0;
+    }
+}
+@media all and (max-width: 780px){
+    .info{
+        margin-top: -70px;
     }
 }
 /*Mise en forme générale Section*/
@@ -398,6 +425,33 @@ p,a{
         margin-top: -60px;
     }
 }
+@media all and (max-width: 780px){
+    .section-1{
+        width: 770px;
+    }
+    .hebergement{
+        width: 420px;
+        margin: 0;
+    }
+    .hebergement-photo{
+        flex-direction: row;   
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+    .hebergement-figure{
+        width: 170px;
+        height: 180px;
+    }    
+    .hebergement-photo img{
+        height: 120px;
+        width: 190px;
+    }
+    .hebergement-photo figcaption{
+        line-height: 20px;
+        width: 190px;
+        font-size: 14px;        
+    }
+}
 /*Mise en forme Section 1 / Les plus populaires*/
 .populaire{     
     display: flex;
@@ -447,15 +501,19 @@ p,a{
 }
 @media all and (max-width: 480px){
     .populaire{
-        width: 480px;
+        width: 490px;
         margin-left: -20px;
         border-radius: 0;
+        margin-top: 50px;
+    }
+    .populaire-title{    
+        width: 480px;
     }
     .populaire-title i{
         margin-left: 200px;
     }
     .populaire-figure{
-        width: auto;
+        width: 450px;
         height: 200px;
         margin-top: 20px;
     }
@@ -475,6 +533,44 @@ p,a{
     }
     .populaire-figure i{
         padding-top: 60px;
+    }
+}
+@media all and (max-width: 780px){
+    .populaire{
+        align-content: center;
+        width: 320px;
+        margin-left: 5px;
+    }
+    .populaire-title{
+        margin-left: 15px;
+    }
+    .populaire-title i{
+       margin-left: 90px;
+    }
+    .populaire-photo{    
+        margin: 20px 0 10px 10px;  
+    }
+    .populaire-figure{
+        width: auto;
+        height: 150px;
+        margin-top: 20px;
+    }
+    .populaire-photo img{
+        border: 5px solid white;
+        height: 120px;
+        width: 130px;
+    }
+    .populaire-photo figcaption{   
+        border: 5px solid white; 
+        height: 120px;
+        width: 180px;
+        line-height: 20px;
+        font-size: 14px;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    .populaire-figure i{
+        padding-top: 20px;
     }
 }
 /*Mise en forme Section 2 / Activités*/
@@ -536,38 +632,69 @@ p,a{
         width: 480px;
         margin-top: 10px;
         margin-left: 10px;
+        margin-bottom: 1230px;
     }
     .activite-title{
         margin-bottom: 20px;
     }
     .activite-photo{
-        flex-direction: column;
-        
+        flex-direction: column;        
         height: 250px;
         width: 440px;
     }
-    .activite-photo-xlarge img{
-        
+    .activite-photo-xlarge img{        
         height: 180px;
         width: 400px;
     }
     .activite-photo-large img{
         height: 180px;
         width: 400px;
+        margin: 0;
     }
     .activite-photo-xlarge figcaption{
         font-size: 18px;
         height: 50px;        
-        width: 398px;
+        width: 400px;
         line-height: 25px;
         padding: 10px 0 0 20px;
     }
     .activite-photo-large figcaption{
         font-size: 18px;
         height: 50px;
-        width: 398px;
+        width: 400px;
         line-height: 25px;
         padding: 10px 0 0 20px;
+    }
+}
+@media all and (max-width: 780px){
+    .activite{
+        width: 780px;
+        margin-top: 20px;
+    }
+    .activite-photo{
+        flex-wrap: wrap;
+        height: auto;
+        width: 700px;
+    }
+    .activite-photo-xlarge{
+       width: 380px;
+       margin-right: 0px;
+    }
+    .activite-photo-large{
+        width: 280px;
+        margin-right: 0px;
+     }
+    .activite-photo-xlarge img{
+        width: 400px;
+    }
+    .activite-photo-large img{
+        width: 300px;
+    }
+    .activite-photo-xlarge figcaption{
+        width: 400px;
+    }
+    .activite-photo-large figcaption{
+        width: 300px;
     }
 }
 /*Mise en forme Section 3 / A propos*/
@@ -587,11 +714,21 @@ p,a{
     .propos{
         flex-direction: column;
         width: 480px;
-        height: auto;
-        margin-top: 1250px;
+        height: auto;        
     }
     .propos-texte{
         width: 440px;
         padding-left: 10px;
     }
+}
+@media all and (max-width: 780px){
+    .propos{
+        width: 800px;
+        margin-top: 450px;
+    }
+    .propos-texte{
+        padding-left: 0;
+        width: 240px;
+    }
+    
 }
