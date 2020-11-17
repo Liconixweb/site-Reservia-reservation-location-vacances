@@ -1,9 +1,14 @@
 /*Mise en forme globale*/
 body{
     font-family: 'Raleway', sans-serif;
-    margin: 0 10px 0 10px;
+}
+.body{
+    margin: 0 auto;
     max-width: 985px;
     min-width: 475px;    
+}
+.footer{
+    margin: 0 auto;
 }
 *{
     box-sizing: border-box;
@@ -19,6 +24,7 @@ p,a{
     font-size: 12px;
     font-weight: lighter;
     text-decoration: none;
+    color: black;
 }
 @media all and (max-width: 480px){
     body{
@@ -55,18 +61,19 @@ p,a{
     margin-left: 10px;   
     line-height: 70px;
     padding: 0 20px 20px 20px;
-    color: #0065fc;
     border-top: 2px solid white;
     text-decoration: none;
 }
 #font-inscription{
     font-weight: bold;
-}
-.menu div:visited{
-    color: black;
+    color: #0065fc;
 }
 .menu div:hover{
     border-top: 2px solid #0065fc;
+}
+.menu a:hover{
+    color: #0065fc;
+    font-weight: bold;
 }
 @media all and (max-width: 480px){
     .menu {
@@ -216,7 +223,9 @@ p,a{
     height: 45px;
     display: flex;
     flex-flow: row wrap;   
+    justify-content: flex-start;
     margin-top: 15px;
+
 }
 .filtres-title{        
     margin-right: 30px;  
@@ -366,6 +375,7 @@ p,a{
     border-radius: 20px 20px 0 0;
     border: 5px solid white;
     box-shadow: 4px 4px 0 4px 5px #f2f2f2;
+    color: black;
     height: 90px;
     width: 180px;
     overflow: hidden;
@@ -381,6 +391,7 @@ p,a{
     border: 5px solid white;
     background-color: white;
     box-shadow: 4px 4px 5px #f2f2f2;
+    color: black;
 }
 .hebergement-footer{ 
     margin: -20px 0 20px 30px;
@@ -703,17 +714,17 @@ p,a{
     justify-content: flex-start;
     background-color: #f2f2f2;
     height: 150px;
-    width: 1080px;
-    margin-left: -47px;
-    padding: 10px 0 0 50px;
+    width: auto;
+    margin-left: 0px;
+    padding: 10px 0 0 140px;
 }
 .propos-texte{
-    width: 328px;
+    width: 985px;
 }
 @media all and (max-width: 480px){
     .propos{
         flex-direction: column;
-        width: 480px;
+        width: auto;
         height: auto;        
     }
     .propos-texte{
@@ -723,7 +734,7 @@ p,a{
 }
 @media all and (max-width: 780px){
     .propos{
-        width: 800px;
+        width: auto;
         margin-top: 450px;
     }
     .propos-texte{
