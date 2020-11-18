@@ -7,7 +7,7 @@ body{
 .body{
     margin: 0 auto;
     max-width: 985px;
-    min-width: 475px;    
+    min-width: 320px;    
 }
 *{
     box-sizing: border-box;
@@ -40,14 +40,17 @@ p,a{
     }
 }
 @media all and (min-width: 481px) and (max-width: 600px){
+    .body{
+        max-width: 600px;
+    }
     h1,h2{
-        font-size: 18px;
+        font-size: 20px;
     }
     h3{
-        font-size: 16px;
+        font-size: 18px;
     }
     p,a{
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 /*Mise en forme Menu*/
@@ -219,13 +222,18 @@ p,a{
         justify-content: center;
     }
 }
+@media all and (min-width: 481px) and (max-width: 600px){
+    .formulaire{
+        margin: 0;
+        justify-content: center;
+    }
+}
 /*Mise en forme des Filtres*/
 .filtres{
     height: 45px;
     display: flex;  
     justify-content: flex-start;
     margin-top: 15px;
-
 }
 .filtres-title{        
     margin-right: 20px;  
@@ -246,8 +254,7 @@ p,a{
     text-align: center;
     font-weight: bold; 
     padding: 0 20px 0 20px;
-    cursor: pointer;
-   
+    cursor: pointer;   
 }
 .filtres-button-texte i{
     width: 35px;
@@ -285,10 +292,21 @@ p,a{
 }
 @media all and (min-width: 481px) and (max-width: 600px){
     .filtres{        
-        margin-top: 0;
-        justify-content: flex-start;
+        flex-flow: row wrap;
         height: 120px;
-        width: 780px;
+    }
+    .filtres:nth-child(2){
+        flex-basis: 30%;
+    }
+    .filtres:nth-child(3){
+        flex-basis: 30%;
+    }
+    .filtres:nth-child(4){
+        flex-basis: 50%;
+        
+    }
+    .filtres:nth-child(5){
+        flex-basis: 50%;
     }
 }
 /*Effet des boutons des Filtres*/
@@ -325,7 +343,7 @@ p,a{
 }
 @media all and (min-width: 481px) and (max-width: 600px){
     .info{
-        margin-top: -70px;
+        margin-top: 0;
     }
 }
 /*Mise en forme générale Section*/
@@ -397,7 +415,7 @@ p,a{
         flex-direction: column-reverse;
         margin-top: -700px;
     }
-    .hebergement{
+    #hebergement{
         background-color: white;
         width: 480px;
         margin-left: -15px;
@@ -431,29 +449,44 @@ p,a{
 }
 @media all and (min-width: 481px) and (max-width: 600px){
     .section-1{
-        width: 770px;
+        flex-direction: column-reverse;
     }
-    .hebergement{
-        width: 420px;
+    #hebergement{    
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;    
         margin: 0;
     }
+    .hebergement-title{
+        margin-left: -70px;
+    }
     .hebergement-photo{
-        flex-direction: row;   
-        margin-left: 20px;
-        margin-top: 40px;
+        flex-direction: column;  
+        justify-content: center;
+        align-items: center;
+        margin: 40px 0 30px -70px;
     }
     .hebergement-figure{
-        width: 170px;
-        height: 180px;
+        width: auto;
+        height: 220px;
     }    
     .hebergement-photo img{
         height: 120px;
-        width: 190px;
+        width: 400px;
     }
     .hebergement-photo figcaption{
-        line-height: 20px;
-        width: 190px;
-        font-size: 14px;        
+        height: 90px;
+        line-height: 25px;
+        width: 398px;
+        font-size: 18px;        
+    }
+    .hebergement-figure i{
+        margin-top: 10px;
+    }
+    .hebergement-footer{
+        margin-left: -70px;
+        margin-top: -40px;
     }
 }
 /*Mise en forme Section 1 / Les plus populaires*/
@@ -544,40 +577,46 @@ p,a{
 }
 @media all and (min-width: 481px) and (max-width: 600px){
     .populaire{
-        align-content: center;
-        width: 320px;
-        margin-left: 5px;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: auto;
+        margin-left: 0;
     }
     .populaire-title{
-        margin-left: 15px;
+        margin-left: 0;
     }
     .populaire-title i{
-       margin-left: 90px;
+       margin-left: 230px;
     }
     .populaire-photo{    
-        margin: 20px 0 10px 10px;  
+        margin: 10px 0 0 0;  
     }
     .populaire-figure{
-        width: auto;
-        height: 150px;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        width: 500px;
         margin-top: 20px;
     }
     .populaire-photo img{
         border: 5px solid white;
-        height: 120px;
-        width: 130px;
+        height: 160px;
+        width: 200px;
     }
     .populaire-photo figcaption{   
         border: 5px solid white; 
-        height: 120px;
-        width: 180px;
+        height: 160px;
+        width: 250px;
         line-height: 20px;
-        font-size: 14px;
+        font-size: 18px;
+        margin-left: -50px;
+        margin-top: -3px;
         padding-top: 10px;
         padding-left: 10px;
     }
     .populaire-figure i{
-        padding-top: 20px;
+        padding-top: 50px;
     }
 }
 /*Mise en forme Section 2 / Activités*/
@@ -633,7 +672,7 @@ p,a{
     box-shadow: 4px 4px 6px #f2f2f2;
 }
 @media all and (min-width: 320px) and (max-width: 480px){
-    .activite{
+    #activite{
         flex-direction: column;
         width: 480px;
         margin-top: 10px;
@@ -673,17 +712,24 @@ p,a{
     }
 }
 @media all and (min-width: 481px) and (max-width: 600px){
-    .activite{
-        width: 780px;
-        margin-top: 20px;
+    #activite{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: space-around;
+        height: 1000px;
+        width: 600px;
+        margin-top: 300px;
     }
     .activite-photo{
-        flex-wrap: wrap;
+        flex-direction: column;
         height: auto;
-        width: 700px;
+        width: auto;
+        margin-top: 40px;
+        margin-left: -80px;
     }
     .activite-photo-xlarge{
-       width: 380px;
+       width: 500px;
        margin-right: 0px;
     }
     .activite-photo-large{
@@ -692,15 +738,23 @@ p,a{
      }
     .activite-photo-xlarge img{
         width: 400px;
+        height: 180px;
+        width: 550px;
     }
     .activite-photo-large img{
         width: 300px;
+        height: 180px;
+        width: 550px;
     }
     .activite-photo-xlarge figcaption{
-        width: 400px;
+        height: 50px; 
+        width: 550px;
+        font-size: 18px;
     }
     .activite-photo-large figcaption{
-        width: 300px;
+        height: 50px; 
+        width: 550px;
+        font-size: 18px;
     }
 }
 /*Mise en forme Section 3 / A propos*/
@@ -730,11 +784,13 @@ p,a{
 }
 @media all and (min-width: 481px) and (max-width: 600px){
     .propos{
+        flex-direction: column;
         width: auto;
-        margin-top: 450px;
+        height: auto; 
+        margin-top: 340px;
     }
     .propos-texte{
-        padding-left: 0;
+        padding-left: 10px;
         width: 240px;
     }
     
