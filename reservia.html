@@ -40,6 +40,7 @@
                     <div>
                         <i class="fas fa-map-marker-alt fa-1x"></i>
                     </div>
+                    <div>
                         <form method="post" action ="traitement.php">
                             <input type="text" name="ville" id="ville" placeholder="Marseille, France" maxlength="100" autofocus/>
                             <input type="submit" value="Rechercher" id="rechercher"/>
@@ -51,22 +52,20 @@
                     <div class="filtres-title">
                         <h3>Filtres</h3>
                     </div>
-                    <div class="filtres-button">
-                        <div>
-                            <i class="fas fa-money-bill-wave-alt"></i>
-                            <button class="filtres-texte">Économique</button>
-                            <i class="fas fa-child"></i>
-                            <button class="filtres-texte">Familial</button>
-                        </div>
-                        <div>
-                            <i class="fas fa-heart"></i>
-                            <button class="filtres-texte">Romantique</button>
-                            <i class="fas fa-dog"></i>
-                            <button class="filtres-texte">Animaux autorisés</button>    
-                        </div>
-                    </div>  
+                    <div class="filtres-button-texte">
+                        <i class="fas fa-money-bill-wave-alt"></i><h3>Économique</h3>
+                    </div>
+                    <div class="filtres-button-texte">                            
+                        <i class="fas fa-child"></i><h3>Familial</h3>
+                    </div>                     
+                    <div class="filtres-button-texte">
+                        <i class="fas fa-heart"></i><h3>Romantique</h3>
+                    </div>
+                    <div class="filtres-button-texte">
+                        <i class="fas fa-dog"></i><h3>Animaux autorisés</h3>
+                    </div>
                 </div>
-                <!--Info-->    
+                <!--Info-->   
                 <div class="info">
                     <div>
                         <i class="fas fa-info-circle fa-1x"></i>
@@ -74,13 +73,13 @@
                     <div>
                         <p>Plus de 500 logements sont disponibles dans cette ville</p>
                     </div>
-                </div>              
+                </div>           
             </header>
             <!--Section 1 / Hébergements-->
             <section>
                 <div class="section-1">
                     <!--Hébergements à Marseille-->
-                    <div class="hebergement">
+                    <div id="hebergement">
                         <div class="hebergement-title">
                             <h2>Hébergement à Marseille</h2>
                         </div>
@@ -147,41 +146,35 @@
             </section>
             <!--Section 2 / Activités-->
             <section>
-                <div class="activite">        
+                <div id="activite">        
                     <div class="activite-title">
                         <h2>Activités à Marseille</h2>
                     </div>
                     <div class="activite-photo">
                         <div class=activite-photo-xlarge>
-                                <a href="">
-                                <img src="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Photo Vieux Port"/>                 
-                                <figcaption>Vieux Port</figcaption>        
+                                <img src="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Photo Vieux Port"/><a href=""></a>                 
+                                <figcaption>Vieux Port</figcaption><a href=""></a>        
                         </div>    
                         <div class=activite-photo-large>
-                                <a href=""></a>
-                                <img src="images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Photo Fort de Pomègues"/>
-                                <figcaption>Fort de Pomègues</figcaption>
-                                <a href=""></a> 
-                                <img src="images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Photo Îles du Frioul"/>
-                                <figcaption>Îles du Frioul</figcaption>
+                                <img src="images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Photo Fort de Pomègues"/><a href=""></a>
+                                <figcaption>Fort de Pomègues</figcaption><a href=""></a>
+                                <img src="images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Photo Îles du Frioul"/><a href=""></a>
+                                <figcaption>Îles du Frioul</figcaption><a href=""></a>
                         </div>
                         <div class=activite-photo-xlarge>
-                                <a href="">                               
-                                <img src="images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Photo Parc National des Calanques"/>
-                                <figcaption>Parc National des Calanques</figcaption>
+                                <img src="images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Photo Parc National des Calanques"/><a href=""></a>
+                                <figcaption>Parc National des Calanques</figcaption><a href=""></a>
                         </div>
                         <div class=activite-photo-large>
-                                <a href="">
-                                <img src="images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Photo Notre Dame-de-la-Garde"/>
-                                <figcaption>Notre Dame-de-la-Garde</figcaption>
-                                <a href=""></a>                          
-                                <img src="images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Photo Parc Longchamp"/>
-                                <figcaption>Parc Longchamp</figcaption>
+                                <img src="images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Photo Notre Dame-de-la-Garde"/><a href=""></a>
+                                <figcaption>Notre Dame-de-la-Garde</figcaption><a href=""></a>                       
+                                <img src="images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Photo Parc Longchamp"/><a href=""></a>
+                                <figcaption>Parc Longchamp</figcaption><a href=""></a>
                         </div> 
                     </div>     
                 </div>
             </section>
-        </div>  
+        </div> 
         <!--Footer / A propos-->
         <footer>
             <div class="propos">

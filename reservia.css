@@ -1,14 +1,13 @@
 /*Mise en forme globale*/
 body{
     font-family: 'Raleway', sans-serif;
+    color: black;
+    margin-top: 0;
 }
 .body{
     margin: 0 auto;
     max-width: 985px;
     min-width: 475px;    
-}
-.footer{
-    margin: 0 auto;
 }
 *{
     box-sizing: border-box;
@@ -24,7 +23,6 @@ p,a{
     font-size: 12px;
     font-weight: lighter;
     text-decoration: none;
-    color: black;
 }
 @media all and (max-width: 480px){
     body{
@@ -58,11 +56,13 @@ p,a{
     justify-content: flex-end;
 }
 .menu div{
-    margin-left: 10px;   
-    line-height: 70px;
+    margin-left: 10px;  
+    margin-top: 0; 
+    line-height: 50px;
     padding: 0 20px 20px 20px;
     border-top: 2px solid white;
     text-decoration: none;
+    color: black;
 }
 #font-inscription{
     font-weight: bold;
@@ -166,7 +166,7 @@ p,a{
     display: flex;
     flex-flow: row nowrap;
     align-content: flex-start;
-    margin-top: -30px;
+    margin-top: -20px;
 }
 .formulaire i{
     text-decoration: none;
@@ -221,50 +221,43 @@ p,a{
 /*Mise en forme des Filtres*/
 .filtres{
     height: 45px;
-    display: flex;
-    flex-flow: row wrap;   
+    display: flex;  
     justify-content: flex-start;
     margin-top: 15px;
 
 }
 .filtres-title{        
-    margin-right: 30px;  
+    margin-right: 20px;  
     line-height: 10px;
 }
-.filtres-button{
+.filtres-button-texte{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-content: center;
     align-items: center;
-    height: 40px;
+    border: 2px solid #f2f2f2;
+    border-radius: 20px 20px 20px 20px;  
+    height: 37px;
+    margin-right: 20px;
 }
-.filtres i{
+.filtres-button-texte h3{
+    font-size: 14px;
     text-align: center;
+    font-weight: bold; 
+    padding: 0 20px 0 20px;
+    cursor: pointer;
+   
+}
+.filtres-button-texte i{
     width: 35px;
     height: 35px;
     line-height: 35px;
-    border: 2px solid #f2f2f2;
+    text-align: center;
     border-radius: 100%;
     background-color: #deebff;
     color: #0065fc;
-    margin-right: -15px;
-    z-index: 10;
-}
-.filtres-texte{
-    font-size: 14px;
-    text-align: center;
-    font-weight: bold;
-    height: 30px;
-    line-height: auto;
-    width: auto;
-    border: 2px solid #f2f2f2;
-    border-left-color: transparent;
-    border-radius: 0 20px 20px 0;
-    background-color: transparent;
-    margin: 0 20px 0 -5px;
-    padding: 0 15px 0 25px;
-    cursor: pointer;
-    z-index: 2;
-}
+}   
+
 @media all and (max-width: 480px){
     .filtres{        
         margin-top: 0;
@@ -297,14 +290,14 @@ p,a{
         width: 780px;
     }
 }
-/*Effet des boutons des Filtres*/
+/*Effet des boutons des Filtres
 .filtres button:hover{
     border: 4px groove #0065fc;
     border-left-color: transparent;
     color: #0065fc;
     font-weight: bold;
     z-index: 1;
-}
+}*/
 /*Mise en forme Info*/
 .info{
     height: 100px;
@@ -349,7 +342,7 @@ p,a{
     height: auto;
     margin-top: -50px;
 }
-.hebergement{
+#hebergement{
     display: flex;
     flex-direction: column;
     background-color: #f2f2f2;
@@ -585,7 +578,7 @@ p,a{
     }
 }
 /*Mise en forme Section 2 / Activités*/
-.activite{
+#activite{
     display: flex;
     flex-direction: column;
     height: 420px;  
@@ -711,15 +704,13 @@ p,a{
 /*Mise en forme Section 3 / A propos*/
 .propos{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     background-color: #f2f2f2;
-    height: 150px;
-    width: auto;
-    margin-left: 0px;
-    padding: 10px 0 0 140px;
+    height: 150px;    
 }
-.propos-texte{
-    width: 985px;
+.propos-texte{    
+    padding: 0 100px 0 -50px;
+    width: 328px;
 }
 @media all and (max-width: 480px){
     .propos{
