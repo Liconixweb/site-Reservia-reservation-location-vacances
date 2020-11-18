@@ -23,8 +23,9 @@ p,a{
     font-size: 12px;
     font-weight: lighter;
     text-decoration: none;
+    color: black;
 }
-@media all and (max-width: 480px){
+@media all and (min-width: 320px) and (max-width: 480px){
     body{
         margin: 0 15px 0 15px;
     }
@@ -38,7 +39,7 @@ p,a{
         font-size: 16px;
     }
 }
-@media all and (max-width: 780px){
+@media all and (min-width: 481px) and (max-width: 600px){
     h1,h2{
         font-size: 18px;
     }
@@ -75,7 +76,7 @@ p,a{
     color: #0065fc;
     font-weight: bold;
 }
-@media all and (max-width: 480px){
+@media all and (min-width: 320px) and (max-width: 480px){
     .menu {
         flex-wrap: wrap;
         justify-content: flex-start;
@@ -129,7 +130,7 @@ p,a{
     flex-flow: column nowrap;
     justify-content: flex-start;
 }
-@media all and (max-width: 480px){
+@media all and (min-width: 320px) and (max-width: 480px){
     .header{
         flex-flow: column wrap;
         width: 470px;
@@ -143,7 +144,7 @@ p,a{
 .logo{
     margin-top: -40px;
 }
-@media all and (max-width: 480px){
+@media all and (min-width: 320px) and (max-width: 480px){
     .logo{
         margin-top: -140px;
     }
@@ -152,7 +153,7 @@ p,a{
 .header-texte{
     margin-top: 20px;
 }
-@media all and (max-width: 480px){
+@media all and (min-width: 320px) and (max-width: 480px){
     .logo{
         margin-top: -140px;
     }
@@ -211,7 +212,7 @@ p,a{
     cursor: pointer;
     margin-left: -5px;    
 }
-@media all and (max-width: 480px){
+@media all and (min-width: 320px) and (max-width: 480px){
     .formulaire{
         margin-top: -20px;
         margin-left: -10px;
@@ -258,7 +259,7 @@ p,a{
     color: #0065fc;
 }   
 
-@media all and (max-width: 480px){
+@media all and (min-width: 320px) and (max-width: 480px){
     .filtres{        
         margin-top: 0;
         margin-bottom: 100px;
@@ -282,7 +283,7 @@ p,a{
         line-height: 45px;
     }
 }
-@media all and (max-width: 780px){
+@media all and (min-width: 481px) and (max-width: 600px){
     .filtres{        
         margin-top: 0;
         justify-content: flex-start;
@@ -290,14 +291,12 @@ p,a{
         width: 780px;
     }
 }
-/*Effet des boutons des Filtres
-.filtres button:hover{
-    border: 4px groove #0065fc;
-    border-left-color: transparent;
+/*Effet des boutons des Filtres*/
+.filtres-button-texte:hover{
     color: #0065fc;
     font-weight: bold;
-    z-index: 1;
-}*/
+    background-color: #deebff;  
+}
 /*Mise en forme Info*/
 .info{
     height: 100px;
@@ -311,7 +310,7 @@ p,a{
     color: #0065fc; 
     padding-right: 10px;
 }
-@media all and (max-width: 480px){
+@media all and (min-width: 320px) and (max-width: 480px){
     .info{
         margin-top: 250px;
         margin-left: 5px;
@@ -324,7 +323,7 @@ p,a{
        margin: 0;
     }
 }
-@media all and (max-width: 780px){
+@media all and (min-width: 481px) and (max-width: 600px){
     .info{
         margin-top: -70px;
     }
@@ -391,8 +390,9 @@ p,a{
     font-size: 12px;
     line-height: 20px;
     font-weight: bold;
+    color: black;
 }
-@media all and (max-width: 480px){
+@media all and (min-width: 320px) and (max-width: 480px){
     .section-1{
         flex-direction: column-reverse;
         margin-top: -700px;
@@ -429,7 +429,7 @@ p,a{
         margin-top: -60px;
     }
 }
-@media all and (max-width: 780px){
+@media all and (min-width: 481px) and (max-width: 600px){
     .section-1{
         width: 770px;
     }
@@ -503,7 +503,10 @@ p,a{
     background-color: white;
     box-shadow: 4px 4px 4px 0 5px #f2f2f2;
 }
-@media all and (max-width: 480px){
+.populaire-photo i{
+    padding-top: 20px;
+}
+@media all and (min-width: 320px) and (max-width: 480px){
     .populaire{
         width: 490px;
         margin-left: -20px;
@@ -539,7 +542,7 @@ p,a{
         padding-top: 60px;
     }
 }
-@media all and (max-width: 780px){
+@media all and (min-width: 481px) and (max-width: 600px){
     .populaire{
         align-content: center;
         width: 320px;
@@ -582,7 +585,6 @@ p,a{
     display: flex;
     flex-direction: column;
     height: 420px;  
-    width: 985px;
     margin: 30px 0;
 }
 .activite-title{    
@@ -630,7 +632,7 @@ p,a{
     background-color: white;
     box-shadow: 4px 4px 6px #f2f2f2;
 }
-@media all and (max-width: 480px){
+@media all and (min-width: 320px) and (max-width: 480px){
     .activite{
         flex-direction: column;
         width: 480px;
@@ -670,7 +672,7 @@ p,a{
         padding: 10px 0 0 20px;
     }
 }
-@media all and (max-width: 780px){
+@media all and (min-width: 481px) and (max-width: 600px){
     .activite{
         width: 780px;
         margin-top: 20px;
@@ -712,7 +714,10 @@ p,a{
     padding: 0 100px 0 -50px;
     width: 328px;
 }
-@media all and (max-width: 480px){
+.propos-texte p{
+    cursor: pointer;
+}
+@media all and (min-width: 320px) and (max-width: 480px){
     .propos{
         flex-direction: column;
         width: auto;
@@ -723,7 +728,7 @@ p,a{
         padding-left: 10px;
     }
 }
-@media all and (max-width: 780px){
+@media all and (min-width: 481px) and (max-width: 600px){
     .propos{
         width: auto;
         margin-top: 450px;
