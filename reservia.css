@@ -150,6 +150,7 @@ p,a{
 @media all and (min-width: 320px) and (max-width: 480px){
     .logo{
         margin-top: -140px;
+        width: 100px;
     }
 }
 /*Mise en forme Text du header*/
@@ -268,10 +269,9 @@ p,a{
 
 @media all and (min-width: 320px) and (max-width: 480px){
     .filtres{        
-        margin-top: 0;
-        margin-bottom: 100px;
-        justify-content: flex-start;
+        flex-flow: row wrap;
         height: 120px;
+        margin-bottom: 0px;
     }
     .filtres-title{
         flex-basis: 100%;
@@ -330,9 +330,9 @@ p,a{
 }
 @media all and (min-width: 320px) and (max-width: 480px){
     .info{
-        margin-top: 250px;
+        margin-top: 30px;
         margin-left: 5px;
-        margin-bottom: 650px;
+        margin-bottom: 670px;
         flex-wrap: nowrap;
         align-items: flex-start;
         height: 50px;
@@ -404,7 +404,7 @@ p,a{
     color: black;
 }
 .hebergement-footer{ 
-    margin: -20px 0 20px 30px;
+    margin: -20px 0 10px 30px;
     font-size: 12px;
     line-height: 20px;
     font-weight: bold;
@@ -535,6 +535,7 @@ p,a{
     border-radius: 0 20px 20px 0;
     background-color: white;
     box-shadow: 4px 4px 4px 0 5px #f2f2f2;
+    cursor: pointer;
 }
 .populaire-photo i{
     padding-top: 20px;
@@ -624,7 +625,7 @@ p,a{
     display: flex;
     flex-direction: column;
     height: 420px;  
-    margin: 30px 0;
+    margin: 20px 0;
 }
 .activite-title{    
     height: 30px;  
@@ -719,7 +720,7 @@ p,a{
         align-content: space-around;
         height: 1000px;
         width: 600px;
-        margin-top: 300px;
+        margin-top: 320px;
     }
     .activite-photo{
         flex-direction: column;
